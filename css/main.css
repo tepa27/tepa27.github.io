@@ -1,0 +1,88 @@
+@font-face{
+  font-family: "Gora-Free";
+  src: url('../fonts/Gora-Free.ttf');
+}
+@font-face{
+  font-family: "OpenSans-Bold";
+  src: url('../fonts/OpenSans-Bold.ttf');
+}
+@font-face{
+  font-family: "OpenSans-Light";
+  src: url('../fonts/OpenSans-Light.ttf');
+}
+@font-face{
+  font-family: "OpenSans-LightItalic";
+  src: url('../fonts/OpenSans-LightItalic.ttf');
+}
+
+/*common start*/
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+/*common end*/
+
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.empty{
+    height: 76px;
+}
+
+/*header start*/
+
+.header{
+    height: 76px;
+    background: rgb(19, 20, 21);
+}
+
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.text-logo{
+    font-family: Gora-Free;
+    color: #f89513;
+    font-size: 18px;
+    line-height: 54px;
+}
+
+/*header end*/
+
+/*footer start*/
+
+.footer{
+    height: 76px;
+    margin-top: -76px;
+    position: relative;
+    background: rgb(19, 20, 21);
+}
+
+/*footer end*/

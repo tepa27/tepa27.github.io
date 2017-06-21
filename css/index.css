@@ -1,0 +1,63 @@
+@font-face{
+    font-family: "Gora-Free";
+    src: url('../fonts/Gora-Free.ttf');
+}
+@font-face{
+    font-family: "OpenSans-Bold";
+    src: url('../fonts/OpenSans-Bold.ttf');
+}
+@font-face{
+    font-family: "OpenSans-Light";
+    src: url('../fonts/OpenSans-Light.ttf');
+}
+@font-face{
+    font-family: "OpenSans-LightItalic";
+    src: url('../fonts/OpenSans-LightItalic.ttf');
+}
+
+.intro{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5) url(../img/bg/index-bg.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.intro__container{
+    width: 172px;
+    height: 277px;
+    position: absolute;
+    left: calc(50% - 172px/2);
+    top: calc(50% - 277px/2);
+}
+
+.logo{
+    display: block;
+    margin: 0 auto;
+    width: 160px;
+    height: 193px;
+    overflow: hidden;
+}
+
+.logo__pic{
+    max-width: 100%;
+}
+
+.button{
+    display: block;
+    width: 172px;
+    height: 45px;
+    margin-top: 39px;
+    border-radius: 3px;
+    background-color: #f89513;
+    color: rgb(255, 255, 255);
+    font-family: "OpenSans-Bold";
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 45px;
+}
+
+.button:hover{
+    background-color: rgb(19, 20, 21);
+}
