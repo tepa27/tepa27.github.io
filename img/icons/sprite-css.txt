@@ -1,0 +1,94 @@
+.bg-fb {
+    width: 20px; height: 20px;
+    background: url('css_sprites.png') -459px -15px;
+}
+
+x
+.bg-fb_hover {
+    width: 20px; height: 20px;
+    background: url('css_sprites.png') -409px -15px;
+}
+
+x
+.bg-feed {
+    width: 19px; height: 17px;
+    background: url('css_sprites.png') -64px -15px;
+}
+
+x
+.bg-feed_active {
+    width: 19px; height: 17px;
+    background: url('css_sprites.png') -113px -15px;
+}
+
+x
+.bg-google {
+    width: 20px; height: 20px;
+    background: url('css_sprites.png') -509px -15px;
+}
+
+x
+.bg-google_hover {
+    width: 20px; height: 20px;
+    background: url('css_sprites.png') -559px -15px;
+}
+
+x
+.bg-mail {
+    width: 20px; height: 20px;
+    background: url('css_sprites.png') -309px -15px;
+}
+
+x
+.bg-mail_hover {
+    width: 20px; height: 20px;
+    background: url('css_sprites.png') -359px -15px;
+}
+
+x
+.bg-main {
+    width: 19px; height: 14px;
+    background: url('css_sprites.png') -15px -15px;
+}
+
+x
+.bg-main_active {
+    width: 19px; height: 14px;
+    background: url('css_sprites.png') -162px -15px;
+}
+
+x
+.bg-service {
+    width: 19px; height: 14px;
+    background: url('css_sprites.png') -211px -15px;
+}
+
+x
+.bg-service_active {
+    width: 19px; height: 14px;
+    background: url('css_sprites.png') -260px -15px;
+}
+
+x
+.bg-twitter {
+    width: 20px; height: 20px;
+    background: url('css_sprites.png') -609px -15px;
+}
+
+x
+.bg-twitter_hover {
+    width: 20px; height: 20px;
+    background: url('css_sprites.png') -659px -15px;
+}
+
+x
+.bg-vk {
+    width: 20px; height: 20px;
+    background: url('css_sprites.png') -709px -15px;
+}
+
+x
+.bg-vk_hover {
+    width: 20px; height: 20px;
+    background: url('css_sprites.png') -759px -15px;
+}
