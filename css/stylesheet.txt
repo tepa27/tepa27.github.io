@@ -1,0 +1,101 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-fb {
+    width: 20px;
+    height: 20px;
+    background-position: -15px -15px;
+}
+
+.sprite-fb-hover {
+    width: 20px;
+    height: 20px;
+    background-position: -65px -15px;
+}
+
+.sprite-feed {
+    width: 19px;
+    height: 17px;
+    background-position: -115px -15px;
+}
+
+.sprite-feed-active {
+    width: 19px;
+    height: 17px;
+    background-position: -164px -15px;
+}
+
+.sprite-google {
+    width: 20px;
+    height: 20px;
+    background-position: -213px -15px;
+}
+
+.sprite-google-hover {
+    width: 20px;
+    height: 20px;
+    background-position: -263px -15px;
+}
+
+.sprite-mail {
+    width: 20px;
+    height: 20px;
+    background-position: -313px -15px;
+}
+
+.sprite-mail-hover {
+    width: 20px;
+    height: 20px;
+    background-position: -363px -15px;
+}
+
+.sprite-main {
+    width: 19px;
+    height: 14px;
+    background-position: -413px -15px;
+}
+
+.sprite-main-active {
+    width: 19px;
+    height: 14px;
+    background-position: -462px -15px;
+}
+
+.sprite-service {
+    width: 19px;
+    height: 14px;
+    background-position: -511px -15px;
+}
+
+.sprite-service-active {
+    width: 19px;
+    height: 14px;
+    background-position: -560px -15px;
+}
+
+.sprite-twitter {
+    width: 20px;
+    height: 20px;
+    background-position: -609px -15px;
+}
+
+.sprite-twitter-hover {
+    width: 20px;
+    height: 20px;
+    background-position: -659px -15px;
+}
+
+.sprite-vk {
+    width: 20px;
+    height: 20px;
+    background-position: -709px -15px;
+}
+
+.sprite-vk-hover {
+    width: 20px;
+    height: 20px;
+    background-position: -759px -15px;
+}

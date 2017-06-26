@@ -74,6 +74,7 @@ p{
     color: #f89513;
     font-size: 18px;
     line-height: 54px;
+    display: block;
 }
 
 /*header end*/
@@ -148,42 +149,42 @@ p{
 }
 
 .social__item_vk{
-  background: url(../img/icons/icons-sprite.png) -709px -15px;
+  background: url('../img/icons/icons-sprite.png') -709px -15px;
 }
 
 .social__item_vk:hover{
-  background: url(../img/icons/icons-sprite.png) -759px -15px;
+  background: url('../img/icons/icons-sprite.png') -759px -15px;
 }
 
 .social__item_fb{
-  background: url(../img/icons/icons-sprite.png) -459px -15px;
+  background: url('../img/icons/icons-sprite.png') -459px -15px;
 }
 
 .social__item_fb:hover{
-  background: url(../img/icons/icons-sprite.png) -409px -15px;
+  background: url('../img/icons/icons-sprite.png') -409px -15px;
 }
 
 .social__item_google{
-  background: url(../img/icons/icons-sprite.png) -509px -15px;
+  background: url('../img/icons/icons-sprite.png') -509px -15px;
 }
 
 .social__item_google:hover{
-  background: url(../img/icons/icons-sprite.png) -559px -15px;
+  background: url('../img/icons/icons-sprite.png') -559px -15px;
 }
 
 .social__item_tw{
-  background: url(../img/icons/icons-sprite.png) -609px -15px;
+  background: url('../img/icons/icons-sprite.png') -609px -15px;
 }
 
 .social__item_tw:hover{
-  background: url(../img/icons/icons-sprite.png) -659px -15px;
+  background: url('../img/icons/icons-sprite.png') -659px -15px;
 }
 
 .social__item_mail{
-  background: url(../img/icons/icons-sprite.png) -309px -15px;
+  background: url('../img/icons/icons-sprite.png') -309px -15px;
 }
 
 .social__item_mail:hover{
-  background: url(../img/icons/icons-sprite.png) -359px -15px;
+  background: url('../img/icons/icons-sprite.png') -359px -15px;
 }
 /*footer end*/
