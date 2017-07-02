@@ -32,7 +32,7 @@
   margin-bottom: 30px;
 }
 
-.feed:last-child{
+.feed__item:last-child{
   border-bottom: none;
 }
 
