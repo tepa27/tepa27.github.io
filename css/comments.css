@@ -9,9 +9,21 @@
   line-height: 18px;
 }
 
-.way--previous-page{
+.way__page{
+  display: inline-block;
+}
+
+.way__page--previous{
   text-decoration: underline;
   color: #f89513;
+}
+
+.way__page--previous::after{
+  content: "/";
+  color: #656464;
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 5px; 
 }
 
 .main-content__header{
