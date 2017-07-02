@@ -6,13 +6,13 @@
 }
 @font-face{
   font-family: "OpenSans-Bold";
-  src: url('../fonts/OpenSans-Bold.woff') format('woff');
+  src: url('../fonts/opensans-bold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face{
   font-family: "OpenSans-Light";
-  src: url('../fonts/OpenSans-Light.woff') format('woff');
+  src: url('../fonts/opensans-light.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
