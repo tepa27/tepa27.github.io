@@ -132,8 +132,38 @@
             </div>
           </li>
         </ul>
-        <div class="main-content__pages"></div>
-        <div class="main-content__form"></div>
+        <div class="main-content__pagination pagination">
+          <div class="pagination__title">Страница 1 из 7</div>
+          <div class="pagination__arrow pagination__arrow--left"></div>
+          <ul class="pagination__pages">
+            <li class="pagination__page-number pagination__page-number--active">1
+            <li class="pagination__page-number">2
+            <li class="pagination__page-number">3
+            <li class="pagination__page-number">4
+            <li class="pagination__page-number">5
+            <li class="pagination__page-number">6
+            <li class="pagination__page-number">7
+          </ul>
+          <div class="pagination__arrow pagination__arrow--right"></div>
+        </div>
+        <form class="main-content__form form">
+          <div class="form__container">
+            <h2 class="form__header">
+            Оставить отзыв
+            </h2>
+            <label for="name">Ваше имя<br/>
+              <input name="name" type="text" placeholder="Андрей">
+            </label>
+            
+            <label for="link">Ссылка на профиль VK<br/>
+              <input name="link" type="text" placeholder="vk.com/example">
+            </label>
+            
+            <label for="feedback">Текст отзыва<br/>
+              <textarea name="feedback" placeholder="Мне понравилось" cols="50" rows="5"></textarea>
+            </label>
+          </div>
+        </form>
       </main>
     </div> 
     <div class="empty"></div>
