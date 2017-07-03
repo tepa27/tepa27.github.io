@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/comments.css">
+  <link rel="icon" type="image/vnd.microsoft.icon" href="img/icons/favicon.ico">
   <title>Отзывы</title>
 </head>
 <body>
@@ -65,8 +66,8 @@
               <img src="img\content\avatars\1.jpg" alt="Алексей Воронов" class="avatar-pic">
             </div>
             <div class="feed__comment comment">
-              <div class="comment__date">12.10.2016</div>
-              <div class="comment__name">Алексей Воронов</div>
+              <time pubdate class="comment__date">12.10.2016</time>
+              <h5 class="comment__name">Алексей Воронов</h5>
               <div class="comment__content">
                 Пришел, чтобы похудеть немного к лету, 
                 но благодаря тренеру Александру Ковалеву, 
@@ -84,8 +85,8 @@
               <img src="img\content\avatars\2.jpg" alt="Инна Смольная" class="avatar-pic">
             </div>
             <div class="feed__comment comment">
-              <div class="comment__date">01.02.2016</div>
-              <div class="comment__name">Инна Смольная</div>
+              <time pubdate class="comment__date">01.02.2016</time>
+              <h5 class="comment__name">Инна Смольная</h5>
               <div class="comment__content">
                 Подарили на день рождения абонемент в бассейн, 
                 пришлось воспользоваться. Сама бы я сюда не пришла, 
@@ -102,8 +103,8 @@
               <img src="img\content\avatars\4.jpg" alt="Владимир Савельев" class="avatar-pic">
             </div>
             <div class="feed__comment comment">
-              <div class="comment__date">22.12.2015</div>
-              <div class="comment__name">Владимир Савельев</div>
+              <time pubdate class="comment__date">22.12.2015</time>
+              <h5 class="comment__name">Владимир Савельев</h5>
               <div class="comment__content">
                 Норм клуб, железа хватает, но техника устаревшая. 
                 За эту цену – прокатит. Если хотите большего, 
@@ -117,8 +118,8 @@
               <img src="img\content\avatars\3.jpg" alt="Ирина Савина" class="avatar-pic">
             </div>
             <div class="feed__comment comment">
-              <div class="comment__date">14.08.2015</div>
-              <div class="comment__name">Ирина Савина</div>
+              <time pubdate class="comment__date">14.08.2015</time>
+              <h5 class="comment__name">Ирина Савина</h5>
               <div class="comment__content">
                 Занимаюсь 4й месяц на петлях ТРХ и очень 
                 нравится результат. Даже знакомые отметили, 
@@ -134,17 +135,31 @@
         </ul>
         <div class="main-content__pagination pagination">
           <div class="pagination__title">Страница 1 из 7</div>
-          <div class="pagination__arrow pagination__arrow--left"></div>
+          <a href="#" class="pagination__arrow pagination__arrow--left"></a>
           <ul class="pagination__pages">
-            <li class="pagination__page-number pagination__page-number--active">1
-            <li class="pagination__page-number">2
-            <li class="pagination__page-number">3
-            <li class="pagination__page-number">4
-            <li class="pagination__page-number">5
-            <li class="pagination__page-number">6
-            <li class="pagination__page-number">7
+            <li class="pagination__page-number pagination__page-number--active">
+              <a class="pagination__link" href="#">1</a>
+            </li>  
+            <li class="pagination__page-number">
+              <a class="pagination__link" href="#">2</a>
+            </li>
+            <li class="pagination__page-number">
+              <a class="pagination__link" href="#">3</a>
+            </li>
+            <li class="pagination__page-number">
+              <a class="pagination__link" href="#">4</a>
+            </li>
+            <li class="pagination__page-number">
+              <a class="pagination__link" href="#">5</a>
+            </li>
+            <li class="pagination__page-number">
+              <a class="pagination__link" href="#">6</a>
+            </li>
+            <li class="pagination__page-number">
+              <a class="pagination__link" href="#">7</a>
+            </li>
           </ul>
-          <div class="pagination__arrow pagination__arrow--right"></div>
+          <a href="#" class="pagination__arrow pagination__arrow--right"></a>
         </div>
 
         <!--ФОРМА-->

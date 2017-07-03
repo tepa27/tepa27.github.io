@@ -77,6 +77,8 @@
 
 .comment__name{
   margin-top: 10px;
+  margin-bottom: 0;
+  padding: 0;
   color: #221f1f;
   font-family: "OpenSans-Bold";
   font-size: 18px;
@@ -106,6 +108,10 @@
   color:  #656464;
 }
 
+.pagination__link{
+  color: inherit;
+}
+
 .pagination__page-number{
   color:  #221f1f;
   font-family: "OpenSans-Bold";
@@ -115,6 +121,11 @@
   width: 25px;
   height: 25px;
   text-align: center;
+  margin-right: -4px;
+}
+
+.pagination__page-number:hover{
+  color: #f89513;
 }
 
 .pagination__page-number--active{
@@ -133,6 +144,9 @@
   transform: rotate(180deg);
   opacity: 0.3;
 }
+
+/*form start*/
+
 
 .main-content__form{
   margin-top: 70px;
@@ -289,6 +303,10 @@
   text-align: center;
 }
 
+.button:hover{
+  background-color:  #f89513;
+}
+
 .button:active{
   color: #f89513;
 }
@@ -301,3 +319,5 @@
 ::-moz-placeholder          {color:rgba(34,31,31,.5;}/* Firefox 19+ */
 :-moz-placeholder           {color:rgba(34,31,31,.5;}/* Firefox 18- */
 :-ms-input-placeholder      {color:rgba(34,31,31,.5;}
+
+/*form end*/
