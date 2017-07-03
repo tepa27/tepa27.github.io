@@ -150,7 +150,7 @@
 }
 
 .form__container{
-  width: 561px;
+  width: 100%;
   padding: 50px 70px;
 }
 
@@ -160,7 +160,6 @@
   line-height: 38px;
 }
 
-.form__name-field, .form__vk-field, 
 .form__text-field, .form__photo,
 .form__button{
   display: block;
@@ -170,7 +169,7 @@
 .vk-field__input{
   border-radius: 3px;
   background-color:  #ffffff;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
 }
 
 .name-field__input:focus, .text-field__input:focus,
@@ -181,6 +180,8 @@
 
 .form__name-field{
   margin-top: 29px;
+  float: left;
+  display: inline-block;
 }
 
 .name-field__input{
@@ -192,6 +193,8 @@
 
 .form__vk-field{
   margin-top: 29px;
+  float: right;
+  display: inline-block;
 }
 
 .vk-field__input{
@@ -210,10 +213,23 @@
   height: 88px;
   padding: 10px;
   resize: none;
+  margin-top: 5px;
+}
+
+.form__bottom{
+  margin-top: 20px;
 }
 
 .form__photo{
-  margin-top: 20px;
+  float: left;
+}
+
+.photo-radio__container{
+  display: inline-block;
+}
+
+.photo-radio__container:last-child{
+  margin-left: 20px;
 }
 
 .photo-radio__input{
@@ -224,6 +240,11 @@
   border: 1px solid #c9c9c9;
   width: 18px;
   height: 18px;
+  transition: all .2s;
+}
+
+.photo-radio__description{
+  transition: all .2s;
 }
 
 #yes:checked ~ .photo-radio__description, 
@@ -252,7 +273,7 @@
 
 
 .form__button{
-  margin-top: 20px;
+  float: right;
 }
 
 .button{
@@ -275,3 +296,8 @@
 #button, #yes, #no{
   display: none;
 }
+
+::-webkit-input-placeholder {color:rgba(34,31,31,.5);}
+::-moz-placeholder          {color:rgba(34,31,31,.5;}/* Firefox 19+ */
+:-moz-placeholder           {color:rgba(34,31,31,.5;}/* Firefox 18- */
+:-ms-input-placeholder      {color:rgba(34,31,31,.5;}

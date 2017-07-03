@@ -146,40 +146,48 @@
           </ul>
           <div class="pagination__arrow pagination__arrow--right"></div>
         </div>
+
+        <!--ФОРМА-->
         <form formmethod="POST" class="main-content__form form">
           <div class="form__container">
             <h2 class="form__header">
             Оставить отзыв
             </h2>
-            <label class="form__name-field name-field" for="name">Ваше имя<br/>
-              <input class="name-field__input" name="name" type="text" placeholder="Андрей">
-            </label>
-            
-            <label class="form__vk-field vk-field" for="link">Ссылка на профиль VK<br/>
-              <input class="vk-field__input" name="link" type="text" placeholder="vk.com/example">
-            </label>
+            <div class="form__top clearfix">
+              <label class="form__name-field name-field" for="name">Ваше имя<br/>
+                <input class="name-field__input" name="name" type="text" placeholder="Андрей">
+              </label>
+              
+              <label class="form__vk-field vk-field" for="link">Ссылка на профиль VK<br/>
+                <input class="vk-field__input" name="link" type="text" placeholder="vk.com/example">
+              </label>
+            </div>
             
             <label class="form__text-field" for="feedback">Текст отзыва<br/>
               <textarea class="text-field__input" name="feedback" placeholder="Мне понравилось" cols="50" rows="5"></textarea>
             </label>
 
-            <div for="photo" class="form__photo photo-radio"> Отображать фото в отзыве?
-             <div class="photo-radio__container">
-                <input name="photo" id="yes" type="radio" checked>
-                <label name="photo" for="yes" class="photo-radio__input"></label>
-                <label name="photo" for="yes" class="photo-radio__description">Да</label>
-             </div>
-
-              <div class="photo-radio__container">
-                <input name="photo" id="no" type="radio">
-                <label name="photo" for="no" class="photo-radio__input"></label>
-                <label name="photo" for="no" class="photo-radio__description">Нет</label>
-              </div>
-            </div>  
-
-            <label class="form__button button" for="button">Отправить
-              <input id="button" type="submit">
-            </label>
+            <div class="form__bottom clearfix">
+              <div for="photo" class="form__photo photo-radio"> 
+                <div class="photo__title">Отображать фото в отзыве?</div>
+                <div class="photo-radio__container">
+                  <input name="photo" id="yes" type="radio" checked>
+                  <label name="photo" for="yes" class="photo-radio__input"></label>
+                  <label name="photo" for="yes" class="photo-radio__description">Да</label>
+                </div>
+  
+                <div class="photo-radio__container">
+                  <input name="photo" id="no" type="radio">
+                  <label name="photo" for="no" class="photo-radio__input"></label>
+                  <label name="photo" for="no" class="photo-radio__description">Нет</label>
+                </div>
+              </div>  
+  
+              <label class="form__button button" for="button">
+                Отправить
+                <input id="button" type="submit">
+              </label>
+            </div>
           </div>
         </form>
       </main>
