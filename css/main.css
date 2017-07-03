@@ -261,7 +261,7 @@ position: relative;
 /*navigation start*/
 
 .sidebar{
-  width: 180px;
+  width: 16%;
   float: left;
 }
 
@@ -299,12 +299,13 @@ position: relative;
 }
 
 .navigation__link--comments::before{
-  width: 21px;
+  width: 19px;
   height: 19px;
   background-position: -115px -15px;
 }
 
 .navigation__link{
+  display: block;
   text-transform: uppercase;
   font-family: "OpenSans-Bold";
   font-size: 12px;
@@ -335,6 +336,6 @@ position: relative;
 /*navigation end*/
 
 .main-content{
-  width: 880px;
+  width: 83%;
   float: right;
 }
