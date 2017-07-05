@@ -4,9 +4,8 @@
 
 .way{
   font-family: "OpenSans-LightItalic";
-  font-size: 14px;
   color: #656464;
-  line-height: 18px;
+  line-height: 	1.2857;   /* 18px / 14px */
 }
 
 .way__page{
@@ -29,8 +28,8 @@
 .main-content__header{
   margin-top: 28px;
   font-family: "OpenSans-Bold";
-  font-size: 49px;
-  line-height: 38px;
+  font-size: 3.5rem;    /*49px*/
+  line-height: 2.7143;    /* 38/14px */
 }
 
 .main-content__feed{
@@ -71,8 +70,7 @@
 
 .comment__date{
   color: #656464;
-  font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;    /* 21px/14px */
 }
 
 .comment__name{
@@ -81,15 +79,15 @@
   padding: 0;
   color: #221f1f;
   font-family: "OpenSans-Bold";
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1.2857rem;  /*18px*/
+  line-height: 	1.5;    /* 21px/14px */
 }
 
 .comment__content{
   margin-top: 10px;
   color: #221f1f;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 1.2857rem;  /*18px*/
+  line-height: 	2.1429;   /* 30px/14px */
 }
 
 .main-content__pagination{
@@ -103,8 +101,7 @@
 }
 
 .pagination__title{
-  font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   color:  #656464;
 }
 
@@ -115,8 +112,7 @@
 .pagination__page-number{
   color:  #221f1f;
   font-family: "OpenSans-Bold";
-  font-size: 14px;
-  line-height: 25px;
+  line-height: 1.7857;    /* 25px/14px */
   border-radius: 3px;
   width: 25px;
   height: 25px;
@@ -159,8 +155,7 @@
   width: 700px;
   min-height: 427px;
   color: #221f1f;
-  font-size: 14px;
-  line-height: 20px;
+  line-height: 	1.4286;    /*  20px/14px */
 }
 
 .form__container{
@@ -170,8 +165,8 @@
 
 .form__header{
   font-family: "OpenSans-Bold";
-  font-size: 49px;
-  line-height: 38px;
+  font-size: 1.5rem;    /*49px*/
+  line-height: 2.7143;    /* 38px/14px */
 }
 
 .form__text-field, .form__photo,
@@ -296,10 +291,10 @@
   width: 125px;
   height: 45px;
   color: #fff;
-  font-size: 12px;
+  font-size: 	0.8571rem;    /*12px*/
   font-family: "OpenSans-Bold";
   text-transform: uppercase;
-  line-height: 45px;
+  line-height: 45px;    /*высота кнопки*/
   text-align: center;
 }
 

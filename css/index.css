@@ -42,7 +42,7 @@
   text-align: center;
   text-transform: uppercase;
   font-family: "OpenSans-Bold";
-  font-size: 12px;
+  font-size: 	0.8571rem;    /*12px*/
   color: #fff;
 
   background-color: #f89513;

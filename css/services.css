@@ -4,9 +4,8 @@
 
 .way{
   font-family: "OpenSans-LightItalic";
-  font-size: 14px;
   color: #656464;
-  line-height: 18px;
+  line-height: 1.2857;    /* 18px/14px */
 }
 
 .way__page{
@@ -29,8 +28,8 @@
 .main-content__header{
   margin-top: 28px;
   font-family: "OpenSans-Bold";
-  font-size: 49px;
-  line-height: 38px;
+  font-size: 3.5rem;    /*49px*/
+  line-height: 	2.7143;    /* 38px/14px */
   color: #221f1f;
 }
 
@@ -63,13 +62,12 @@
 .services__name{
   margin-top: 20px;
   font-family: "OpenSans-Bold";
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 	1.2857rem;    /*18px*/
+  line-height: 	1.5;    /* 21px/14px */
 }
 
 .services__description{
   margin-top: 5px;
   font-family: "OpenSans-Light";
-  font-size: 14px;
-  line-height: 21px;
+  line-height: 	1.5;    /* 21px/14px */
 }

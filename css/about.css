@@ -24,8 +24,8 @@
   color:  #fff;
   text-transform: uppercase;
   font-family: "OpenSans-Bold";
-  font-size: 49px;
-  line-height: 38px;
+  font-size: 3.5rem;    /*49px*/
+  line-height: 2.714rem;    /* 38px/14px */
 }
 
 .main-content__history{
@@ -35,8 +35,8 @@
 
 .history{
   font-family: "OpenSans-Light";
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 		1.2857rem;    /*18px*/
+  line-height: 	2.1429em;    /* 30px/14px */
   color: #221f1f;
 }
 
@@ -80,8 +80,8 @@
 .usp{
   background: #131415;
   color: #fff;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 	1.2857rem;    /*18px*/
+  line-height: 	2.1429;    /* 30px/14px */
 }
 
 .usp b{
@@ -97,8 +97,8 @@
 .partners__header{
   text-transform: uppercase;
   font-family: "OpenSans-Bold";
-  font-size: 49px;
-  line-height: 38px;
+  font-size: 3.5rem;    /*49px*/
+  line-height: 2.714rem;    /* 38px/14px */
 }
 
 .partners__list{
@@ -109,10 +109,10 @@
 .partners__items{
   display: inline-block;
   width: 161px;
-  height: 64px;
   margin-bottom: 50px;
   margin-left: 98px;
   overflow: hidden;
+  vertical-align: middle;
 }
 
 .partners__link {
@@ -121,7 +121,6 @@
 
 .partners__logo {
   max-width: 100%;
-  vertical-align: middle;
   filter: grayscale(1);
   opacity: .5;
   transition: all .5s;
