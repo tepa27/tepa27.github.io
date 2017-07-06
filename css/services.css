@@ -29,7 +29,7 @@
   margin-top: 28px;
   font-family: "OpenSans-Bold";
   font-size: 3.5rem;    /*49px*/
-  line-height: 	2.7143;    /* 38px/14px */
+  line-height: 	.7755;    /* 38/49 not 38px/14px */
   color: #221f1f;
 }
 
@@ -63,7 +63,7 @@
   margin-top: 20px;
   font-family: "OpenSans-Bold";
   font-size: 	1.2857rem;    /*18px*/
-  line-height: 	1.5;    /* 21px/14px */
+  line-height: 	1.16667;    /* 21/18 not 21px/14px */
 }
 
 .services__description{

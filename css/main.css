@@ -121,9 +121,8 @@ position: relative;
 .copyright{
   font-family: "OpenSans-Light";
   color: #fff;
-  /*font-size: 14px;*/
   white-space: pre-line;
-  line-height: 1,2857;    /* 18px/14px */
+  line-height: 1.2857;    /* 18px/14px */
 }
 
 .copyright__loft{
@@ -141,6 +140,12 @@ position: relative;
   font-family: "GoraFree-Regular";
   color: #f89513;
   font-size: 1.2857rem;    /*18px*/
+}
+
+.socials__list{
+  /*margin-right: 25px;*/
+  font-size: 0;
+  text-align: left;
 }
 
 .socials__title{
@@ -162,11 +167,7 @@ position: relative;
 
 .socials__item{
   margin-right: 10px;
-  margin-left: -4px;
-}
-
-.socials__list{
-  margin-right: 25px;
+  /*margin-left: -4px;*/
 }
 
 
@@ -320,13 +321,13 @@ position: relative;
 }
 
 .navigation__menu{
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 .navigation__item{
   position: relative;
   margin-bottom: 40px;
-  padding-left: 37px;
+  
 }
 
 .navigation__link::before{
@@ -335,7 +336,7 @@ position: relative;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  display: inline-block;
+  /*display: inline-block;*/
   background-repeat: no-repeat;
   background-image: url('../img/icons/sprite-icons.png'); 
 }
@@ -365,6 +366,7 @@ position: relative;
   font-size: 0.8571rem;    /*12px*/
   color: #f89513;
   transition: color .1s;
+  padding-left: 37px;
 }
 
 .navigation__item--active .navigation__link,
