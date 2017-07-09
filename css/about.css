@@ -1,5 +1,5 @@
 .main-content{
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .main-content__head{
@@ -113,15 +113,17 @@
 .partners__items{
   display: inline-block;
   width: 161px;
-  height: 64px;
-  margin-bottom: 50px;
+  height: 100px;
   margin-left: 98px;
   overflow: hidden;
-  vertical-align: middle;
+  vertical-align: top;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 .partners__link {
-  display: block;
+  display: inline-block;
+  line-height: 80px;
 }
 
 .partners__logo {
