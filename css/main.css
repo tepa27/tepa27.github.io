@@ -256,11 +256,16 @@ position: relative;
 }
 
 .popup{
-  position: relative;
   display: block;
 }
 
+.popup__container{
+  display: inline-block;
+  position: relative;
+}
+
 .popup__top{
+  position: relative;
   display: inline-block;
   font-family: "OpenSans-Bold";
   text-decoration: underline;
@@ -270,39 +275,47 @@ position: relative;
   transition: all .3s;
 }
 
-.popup__top:hover{
-  color: #fff;
-  opacity: 0.7;
+.popup__container::after{
+  position: absolute;
+  content: '';
+  top: 10px;
+  left: -40%;
+  width: 150px;
+  height: 75px;
+  z-index: 1;
 }
 
-.popup__container{ 
+.popup__content{ 
   position: absolute;
   width: 163px;
   min-height: 70px;
   background: #f5f6f5;
   border-radius: 3px;
-  right: -999px;
-  top: 33px;
-  z-index: 1;
+  right: -9999px;
+  top: 37px;
 
-  line-height: 1.2857; /*18px*/
-  padding: 15px 10px 15px 20px;
+  line-height: 1.42;
+  padding: 12px 10px 12px 20px;
   text-align: left;
 
   box-shadow: 0 0 10px 0px #173b75;
+  opacity: 0;
+  transition: opacity .5s;
+
+  z-index: 1;
 }
 
-.popup__container:after {
+.popup__content:after {
   position: absolute;
   content: "";
-  top: -10px;
-  right: -1px;
-  width: 0;
-	height: 0;
-  border-radius: 3px;
-	border-left: 12px solid transparent;
-	border-right: 12px solid transparent;
-	border-bottom: 12px solid #f5f6f5;
+  background: #f5f6f5;
+  top: -8px;
+  right: 3px;
+  width: 19px;
+	height: 19px;
+  transform: rotate(45deg);
+  border-radius: 4px;
+  box-shadow: -3px -3px 5px 0px #173b75;
 }
 
 .popup__shedule--work{
@@ -312,8 +325,20 @@ position: relative;
   margin-bottom: 5px;
 }
 
-.popup__top:hover ~ .popup__container{
+
+.popup__top:hover{
+  color: #fff;
+  opacity: 0.7;
+}
+
+.popup__container:hover .popup__content{
   right: 0;
+  opacity: 1;
+}
+
+.popup__container:hover .popup__top{
+  color: #fff;
+  opacity: 0.7;
 }
 
 /*header end*/
@@ -394,7 +419,7 @@ position: relative;
 
 .navigation__item--active .navigation__link--comments::before,
 .navigation__item:hover .navigation__link--comments::before{
-  background-position: -164px -15px;
+  background-position: -164px -16px;
 }
 
 /*navigation end*/

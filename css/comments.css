@@ -1,5 +1,5 @@
 .main-content__way{
-  margin-top: 46px;
+  margin-top: 42px;
 }
 
 .way{
@@ -27,7 +27,7 @@
   color: #656464;
   display: inline-block;
   text-decoration: none;
-  padding-right: 3px; 
+  padding-right: 0px; 
 }
 
 .way__page:first-child::before{
@@ -35,14 +35,15 @@
 }
 
 .main-content__header{
-  margin-top: 28px;
+  margin-top: 21px;
   font-family: "OpenSans-Bold";
   font-size: 49px;
-  line-height: 1;
+  line-height: 	1;
+  color: #221f1f;
 }
 
 .main-content__feed{
-  margin-top: 50px;
+  margin-top: 45px;
   width: 100%;
 }
 
@@ -54,13 +55,14 @@
 
 .feed__item:last-child{
   border-bottom: none;
+  margin-bottom: 24px;
 }
 
 .feed__avatar{
   width: 160px;
   height: 160px;
   border-radius: 160px;
-  background: #f5f5f5;;
+  background: #f5f5f5;
   float: left;
   margin-bottom: 30px;
   overflow: hidden;
@@ -74,34 +76,32 @@
   width: 700px;
   float: right;
   margin-left: 19px;
-  margin-bottom: 26px;
+  margin-bottom: 22px;
 }
 
 .comment__date{
   color: #656464;
-  line-height: 1.5;    /* 21px/14px */
 }
 
 .comment__name{
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 0;
   padding: 0;
   color: #221f1f;
   font-family: "OpenSans-Bold";
   font-size: 18px;
-  line-height: 	1.16667;    /* 21/18 not 21px/14px */
+  line-height: 	1.42;    /* 21/18 not 21px/14px */
 }
 
 .comment__content{
-  margin-top: 10px;
+  margin-top: 5px;
   color: #221f1f;
   font-size: 18px;
-  line-height: 	1.66667;   /* 30/18 not 30px/14px */
+  line-height: 	1.66667;
 }
 
 .main-content__pagination{
-  margin: 0 auto;
-  width: 60%;
+  margin-left: 216px;
 }
 
 .pagination__title, .pagination__arrow,
@@ -169,7 +169,7 @@
 
 .form__container{
   width: 100%;
-  padding: 50px 70px;
+  padding: 45px 70px;
 }
 
 .form__header{
@@ -201,20 +201,20 @@
 }
 
 .form__name-field{
-  margin-top: 29px;
+  margin-top: 18px;
   float: left;
   display: inline-block;
 }
 
 .name-field__input{
   margin-top: 5px;
-  padding: 10px 15px;
+  padding: 5px 8px;
   width: 269px;
   height: 45px;
 }
 
 .form__vk-field{
-  margin-top: 29px;
+  margin-top: 18px;
   float: right;
   display: inline-block;
 }
@@ -222,24 +222,24 @@
 .vk-field__input{
   width: 269px;
   height: 45px;
-  padding: 10px 15px;
+  padding: 5px 8px;
   margin-top: 5px;
 }
 
 .form__text-field{
-  margin-top: 21px;
+  margin-top: 16px;
 }
 
 .text-field__input{
   width: 559px;
   height: 88px;
-  padding: 10px;
+  padding: 5px 8px;
   resize: none;
   margin-top: 5px;
 }
 
 .form__bottom{
-  margin-top: 20px;
+  margin-top: 14px;
 }
 
 .form__photo{
@@ -248,6 +248,7 @@
 
 .photo-radio__container{
   display: inline-block;
+  margin-top: 5px;
 }
 
 .photo-radio__container:last-child{
@@ -260,8 +261,8 @@
   vertical-align: middle;
   border-radius: 50%;
   border: 1px solid #c9c9c9;
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   transition: all .2s;
 }
 
@@ -310,6 +311,7 @@
   text-transform: uppercase;
   line-height: 45px;    /*высота кнопки*/
   text-align: center;
+  letter-spacing: 1px;
 }
 
 .button:hover{
@@ -317,7 +319,7 @@
 }
 
 .button:active{
-  color: #f89513;
+  color: #1c1f1d;
 }
 
 #yes, #no{
