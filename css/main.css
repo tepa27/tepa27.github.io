@@ -38,6 +38,7 @@ body{
   height: 100%;  
   min-height: 100%;
   font-size: 14px;
+  line-height: 1.42;
   font-family: "OpenSans-Light", Arial, Helvetica, sans-serif;
 }
 ul{
@@ -98,7 +99,7 @@ position: relative;
   padding: 0 20px;
 }
 
-.footer__left{
+.footer__description{
   float: left;
   width: 40%;
   padding-top: 14px;
@@ -111,7 +112,7 @@ position: relative;
   text-align: center;
 }
 
-.footer__right{
+.footer__socials{
   float: right;
   width: 40%;
   padding-top: 20px;
@@ -123,6 +124,8 @@ position: relative;
   color: #fff;
   white-space: pre-line;
   line-height: 1.2857;    /* 18px/14px */
+  max-height: 60px;
+  overflow: hidden;
 }
 
 .copyright__loft{
@@ -135,11 +138,11 @@ position: relative;
 }
 
 .text-logo{
-  display: block;
+  display: inline-block;
   text-transform: uppercase;
   font-family: "GoraFree-Regular";
   color: #f89513;
-  font-size: 1.2857rem;    /*18px*/
+  font-size: 18px;
 }
 
 .socials__list{
@@ -234,27 +237,30 @@ position: relative;
   float: left;
   width: 50%;
   text-align: left;
-  margin-top: 30px;
+  padding-top: 30px;
 }
 
 .header__right{
   float: right;
   width: 50%;
   text-align: right;
-  margin-top: 21px;
+  padding-top: 21px;
 }
 
 .phone{
+  display: inline-block;
   font-family: "OpenSans-Bold";
   color: #fff;
-  font-size: 	1.5rem;    /*21px*/
+  font-size: 	21px;
 }
 
 .popup{
   position: relative;
+  display: block;
 }
 
 .popup__top{
+  display: inline-block;
   font-family: "OpenSans-Bold";
   text-decoration: underline;
   color: #f89513;
@@ -326,7 +332,7 @@ position: relative;
 
 .navigation__item{
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   
 }
 
@@ -356,16 +362,18 @@ position: relative;
 .navigation__link--comments::before{
   width: 19px;
   height: 19px;
-  background-position: -115px -15px;
+  background-position: -115px -16px;
 }
 
 .navigation__link{
   display: block;
   text-transform: uppercase;
   font-family: "OpenSans-Bold";
-  font-size: 0.8571rem;    /*12px*/
+  font-size: 12px;
   color: #f89513;
   transition: color .1s;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 37px;
 }
 

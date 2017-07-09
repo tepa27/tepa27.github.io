@@ -5,31 +5,40 @@
 .way{
   font-family: "OpenSans-LightItalic";
   color: #656464;
-  line-height: 	1.2857;   /* 18px / 14px */
+  line-height: 1.2857;    /* 18px/14px */
 }
 
 .way__page{
   display: inline-block;
 }
 
-.way__page--previous{
+.way__link{
   text-decoration: underline;
   color: #f89513;
 }
 
-.way__page--previous::after{
+.way__link--last-page{
+  text-decoration: none;
+  color: #656464;
+}
+
+.way__page::before{
   content: "/";
   color: #656464;
   display: inline-block;
   text-decoration: none;
-  padding-left: 5px; 
+  padding-right: 3px; 
+}
+
+.way__page:first-child::before{
+  content: '';
 }
 
 .main-content__header{
   margin-top: 28px;
   font-family: "OpenSans-Bold";
-  font-size: 3.5rem;    /*49px*/
-  line-height: .7755;    /* 38/49px 38/14px */
+  font-size: 49px;
+  line-height: 1;
 }
 
 .main-content__feed{
@@ -79,14 +88,14 @@
   padding: 0;
   color: #221f1f;
   font-family: "OpenSans-Bold";
-  font-size: 1.2857rem;  /*18px*/
+  font-size: 18px;
   line-height: 	1.16667;    /* 21/18 not 21px/14px */
 }
 
 .comment__content{
   margin-top: 10px;
   color: #221f1f;
-  font-size: 1.2857rem;  /*18px*/
+  font-size: 18px;
   line-height: 	1.66667;   /* 30/18 not 30px/14px */
 }
 
@@ -165,8 +174,8 @@
 
 .form__header{
   font-family: "OpenSans-Bold";
-  font-size: 3.5rem;    /*49px*/
-  line-height: .7755;    /* 38/49 not 38px/14px */
+  font-size: 49px;
+  line-height: 1;
 }
 
 .form__text-field, .form__photo,
@@ -179,6 +188,10 @@
   border-radius: 3px;
   background-color:  #ffffff;
   border: 1px solid #fff;
+}
+
+.name-field__input, .vk-field__input{
+  display: block;
 }
 
 .name-field__input:focus, .text-field__input:focus,
@@ -286,12 +299,13 @@
 }
 
 .button{
+  border: none;
   border-radius: 3px;
   background-color:  #1c1f1d;
   width: 125px;
   height: 45px;
   color: #fff;
-  font-size: 	0.8571rem;    /*12px*/
+  font-size: 	12px;
   font-family: "OpenSans-Bold";
   text-transform: uppercase;
   line-height: 45px;    /*высота кнопки*/
@@ -306,7 +320,7 @@
   color: #f89513;
 }
 
-#button, #yes, #no{
+#yes, #no{
   display: none;
 }
 

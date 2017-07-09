@@ -58,9 +58,11 @@
       <main class="main-content">
         <ul class="main-content__way way">
           <li class="way__page">
-            <a class="way__page--previous" href="about.html">Главная</a>
+            <a class="way__link" href="about.html">Главная</a>
           </li>
-          <li class="way__page">Отзывы</li>
+          <li class="way__page">
+            <a class="way__link way__link--last-page">Отзывы</a>
+          </li>
         </ul>
 
         <h2 class="main-content__header">
@@ -69,10 +71,10 @@
         <ul class="main-content__feed feed">
           <li class="feed__item clearfix">
             <div class="feed__avatar">
-              <img src="img\content\avatars\1.jpg" alt="Алексей Воронов" class="avatar-pic">
+              <img src="img/content/avatars/1.jpg" alt="Алексей Воронов" class="avatar-pic">
             </div>
             <div class="feed__comment comment">
-              <time pubdate class="comment__date">12.10.2016</time>
+              <time pubdate date="2016-10-12" class="comment__date">12.10.2016</time>
               <h5 class="comment__name">Алексей Воронов</h5>
               <div class="comment__content">
                 Пришел, чтобы похудеть немного к лету, 
@@ -88,10 +90,10 @@
           </li>
           <li class="feed__item clearfix">
             <div class="feed__avatar">
-              <img src="img\content\avatars\2.jpg" alt="Инна Смольная" class="avatar-pic">
+              <img src="img/content/avatars/2.jpg" alt="Инна Смольная" class="avatar-pic">
             </div>
             <div class="feed__comment comment">
-              <time pubdate class="comment__date">01.02.2016</time>
+              <time pubdate date="2016-02-01" class="comment__date">01.02.2016</time>
               <h5 class="comment__name">Инна Смольная</h5>
               <div class="comment__content">
                 Подарили на день рождения абонемент в бассейн, 
@@ -106,10 +108,10 @@
           </li>
           <li class="feed__item clearfix">
             <div class="feed__avatar">
-              <img src="img\content\avatars\4.jpg" alt="Владимир Савельев" class="avatar-pic">
+              <img src="img/content/avatars/4.jpg" alt="Владимир Савельев" class="avatar-pic">
             </div>
             <div class="feed__comment comment">
-              <time pubdate class="comment__date">22.12.2015</time>
+              <time pubdate date="2015-12-22" class="comment__date">22.12.2015</time>
               <h5 class="comment__name">Владимир Савельев</h5>
               <div class="comment__content">
                 Норм клуб, железа хватает, но техника устаревшая. 
@@ -121,10 +123,10 @@
           </li>
           <li class="feed__item clearfix">
             <div class="feed__avatar">
-              <img src="img\content\avatars\3.jpg" alt="Ирина Савина" class="avatar-pic">
+              <img src="img/content/avatars/3.jpg" alt="Ирина Савина" class="avatar-pic">
             </div>
             <div class="feed__comment comment">
-              <time pubdate class="comment__date">14.08.2015</time>
+              <time pubdate date="2015-08-14" class="comment__date">14.08.2015</time>
               <h5 class="comment__name">Ирина Савина</h5>
               <div class="comment__content">
                 Занимаюсь 4й месяц на петлях ТРХ и очень 
@@ -169,23 +171,23 @@
         </div>
 
         <!--ФОРМА-->
-        <form formmethod="POST" class="main-content__form form">
+        <form method="POST" class="main-content__form form">
           <div class="form__container">
             <h2 class="form__header">
             Оставить отзыв
             </h2>
             <div class="form__top clearfix">
-              <label class="form__name-field name-field" for="name">Ваше имя<br/>
-                <input class="name-field__input" name="name" type="text" placeholder="Андрей">
+              <label class="form__name-field name-field" for="name">Ваше имя
+                <input class="name-field__input" id="name" name="name" type="text" placeholder="Андрей">
               </label>
               
-              <label class="form__vk-field vk-field" for="link">Ссылка на профиль VK<br/>
-                <input class="vk-field__input" name="link" type="text" placeholder="vk.com/example">
+              <label class="form__vk-field vk-field" for="link">Ссылка на профиль VK
+                <input class="vk-field__input" id="link" name="link" type="text" placeholder="vk.com/example">
               </label>
             </div>
             
-            <label class="form__text-field" for="feedback">Текст отзыва<br/>
-              <textarea class="text-field__input" name="feedback" placeholder="Мне понравилось" cols="50" rows="5"></textarea>
+            <label class="form__text-field" for="feedback">Текст отзыва
+              <textarea class="text-field__input" id="feedback" name="feedback" placeholder="Мне понравилось" cols="50" rows="5"></textarea>
             </label>
 
             <div class="form__bottom clearfix">
@@ -204,10 +206,9 @@
                 </div>
               </div>  
   
-              <label class="form__button button" for="button">
+              <button class="form__button button" id="button" type="submit">
                 Отправить
-                <input id="button" type="submit">
-              </label>
+              </button>
             </div>
           </div>
         </form>
@@ -217,7 +218,7 @@
   </div>
   <footer class="footer">
     <div class="container clearfix">
-      <div class="footer__left">
+      <div class="footer__description">
         <div class="copyright">Сделано с любовью и старанием
           на курсе &laquo;HTML + CSS&raquo; в <span class="copyright__loft">LoftSchool</span>.
           Автор работы: <span class="copyright__name">Чурилович Глафира</span></div>
@@ -225,7 +226,7 @@
       <div class="footer__logo">
         <a class="text-logo" href="about.html">Афродита</a>
       </div>
-      <div class="footer__right">
+      <div class="footer__socials">
         <div class="socials">
           <h3 class="socials__title">
             Наши социальные сети

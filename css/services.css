@@ -12,24 +12,33 @@
   display: inline-block;
 }
 
-.way__page--previous{
+.way__link{
   text-decoration: underline;
   color: #f89513;
 }
 
-.way__page--previous::after{
+.way__link--last-page{
+  text-decoration: none;
+  color: #656464;
+}
+
+.way__page::before{
   content: "/";
   color: #656464;
   display: inline-block;
   text-decoration: none;
-  padding-left: 5px; 
+  padding-right: 3px; 
+}
+
+.way__page:first-child::before{
+  content: '';
 }
 
 .main-content__header{
   margin-top: 28px;
   font-family: "OpenSans-Bold";
-  font-size: 3.5rem;    /*49px*/
-  line-height: 	.7755;    /* 38/49 not 38px/14px */
+  font-size: 49px;
+  line-height: 	1;
   color: #221f1f;
 }
 
@@ -62,7 +71,7 @@
 .services__name{
   margin-top: 20px;
   font-family: "OpenSans-Bold";
-  font-size: 	1.2857rem;    /*18px*/
+  font-size: 	18px;
   line-height: 	1.16667;    /* 21/18 not 21px/14px */
 }
 
