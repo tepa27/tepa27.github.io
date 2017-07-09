@@ -275,14 +275,12 @@ position: relative;
 }
 
 .popup__container{ 
-  display: none;
-
   position: absolute;
   width: 163px;
   min-height: 70px;
   background: #f5f6f5;
   border-radius: 3px;
-  right: 0;
+  right: -999px;
   top: 33px;
   z-index: 1;
 
@@ -314,7 +312,7 @@ position: relative;
 }
 
 .popup__top:hover ~ .popup__container{
-  display: block;
+  right: 0;
 }
 
 /*header end*/
