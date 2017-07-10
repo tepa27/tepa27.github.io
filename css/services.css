@@ -7,7 +7,7 @@
 .way{
   font-family: "OpenSans-LightItalic";
   color: #656464;
-  line-height: 1.2857;    /* 18px/14px */
+  line-height: 1.2857;
 }
 
 .way__page{
@@ -81,13 +81,13 @@
   margin-top: 25px;
   font-family: "OpenSans-Bold";
   font-size: 	18px;
-  line-height: 	1.16667;    /* 21/18 not 21px/14px */
+  line-height: 	1.16667;
 }
 
 .services__description{
   margin-top: 5px;
   font-family: "OpenSans-Light";
-  line-height: 	1.5;    /* 21px/14px */
+  line-height: 	1.5;
 }
 
 /*services end*/
