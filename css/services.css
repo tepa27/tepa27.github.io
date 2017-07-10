@@ -1,3 +1,5 @@
+/*way start*/
+
 .main-content__way{
   margin-top: 42px;
 }
@@ -34,6 +36,10 @@
   content: '';
 }
 
+/*way end*/
+
+/*main-content header start*/
+
 .main-content__header{
   margin-top: 21px;
   font-family: "OpenSans-Bold";
@@ -41,6 +47,10 @@
   line-height: 	1;
   color: #221f1f;
 }
+
+/*main-content header end*/
+
+/*services start*/
 
 .main-content__services{
   margin-top: 42px;
@@ -79,3 +89,5 @@
   font-family: "OpenSans-Light";
   line-height: 	1.5;    /* 21px/14px */
 }
+
+/*services end*/

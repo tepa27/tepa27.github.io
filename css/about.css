@@ -2,6 +2,8 @@
   margin-bottom: 12px;
 }
 
+/*header of main-content start*/
+
 .main-content__head{
   width: 100%;
   height: 354px;
@@ -32,6 +34,10 @@
   font-size: 49px;
   line-height: 1;
 }
+
+/*header of main-content end*/
+
+/*history start*/
 
 .main-content__history{
   width: 700px;
@@ -76,6 +82,10 @@
   margin-top: -10px;
 }
 
+/*history end*/
+
+/*usp start*/
+
 .main-content__usp{
   margin-top: 15px;
   width: 700px;
@@ -92,6 +102,10 @@
 .usp b{
   font-family: "OpenSans-Bold";
 }
+
+/*usp end*/
+
+/*partners start*/
 
 .main-content__partners{
   margin-top: 65px;
@@ -137,3 +151,5 @@
   filter: none;
   opacity: 1;
 }
+
+/*partners end*/
