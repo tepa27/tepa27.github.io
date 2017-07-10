@@ -227,11 +227,10 @@ position: relative;
 /*header start*/
 
 .header{
-  min-height: 76px;
+  height: 76px;
   width: 100%;
   background: #131415;
   position: relative;
-  overflow: hidden;
 }
 
 .header__left{
@@ -293,7 +292,7 @@ position: relative;
   min-height: 70px;
   background: #f5f6f5;
   border-radius: 3px;
-  right: -9999px;
+  right: 0;
   top: 37px;
 
   line-height: 1.42;
@@ -429,5 +428,4 @@ position: relative;
 .main-content{
   width: 83%;
   float: right;
-  overflow: hidden;
 }
