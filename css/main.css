@@ -246,7 +246,6 @@ position: relative;
   width: 50%;
   text-align: right;
   padding-top: 14px;
-  overflow: hidden;
 }
 
 .phone{
@@ -428,4 +427,5 @@ position: relative;
 .main-content{
   width: 83%;
   float: right;
+  overflow: hidden;
 }
