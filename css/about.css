@@ -12,6 +12,7 @@
   background-size: cover;
   background-position: center;
   position: relative;
+  overflow: hidden;
 }
 
 .main-content__head--gray{
