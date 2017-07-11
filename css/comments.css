@@ -143,6 +143,7 @@
   height: 25px;
   text-align: center;
   margin-right: -4px;
+  transition: color .3s;
 }
 
 .pagination__page-number:hover{
@@ -205,7 +206,8 @@
 .vk-field__input{
   border-radius: 3px;
   background-color:  #ffffff;
-  border: 1px solid #fff;
+  border: 1px solid transparent;
+  transition: border .3s;
 }
 
 .name-field__input, .vk-field__input{
@@ -279,7 +281,21 @@
   border: 1px solid #c9c9c9;
   width: 20px;
   height: 20px;
-  transition: all .2s;
+  transition: all .5s;
+}
+
+.photo-radio__input::before{
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #f89513;
+  opacity: 0;
+  transition: all .5s;
 }
 
 .photo-radio__description{
@@ -298,16 +314,7 @@
 
 #yes:checked ~ .photo-radio__input::before,
 #no:checked ~ .photo-radio__input::before{
-  content: "";
-  display: block;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: #f89513;
+  opacity: 1;
 }
 
 
@@ -328,6 +335,7 @@
   line-height: 45px;    /*высота кнопки*/
   text-align: center;
   letter-spacing: 1px;
+  transition: background-color .3s;
 }
 
 .button:hover{
