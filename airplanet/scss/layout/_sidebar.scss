@@ -1,0 +1,15 @@
+.sidebar{
+  float: left;
+
+  width: $sidebar-width;
+  min-width: 115px;
+  height: 100px;
+
+  background: pink;
+}
+
+.menu{
+  width: 105px;
+  height: 18px;
+  background: blue;
+}

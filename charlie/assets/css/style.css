@@ -1,0 +1,2073 @@
+@font-face{
+  font-family: Dosis-Regular;
+  src: url(../fonts/Dosis-Regular.ttf);
+}
+
+@font-face{
+  font-family: Dosis-ExtraLight;
+  src: url(../fonts/Dosis-ExtraLight.ttf);
+}
+
+@font-face{
+  font-family: Dosis-Bold;
+  src: url(../fonts/Dosis-Bold.ttf);
+}
+
+@font-face{
+  font-family: Dosis-Medium;
+  src: url(../fonts/Dosis-Medium.ttf);
+}
+
+@font-face{
+  font-family: Dosis-Light;
+  src: url(../fonts/Dosis-Light.ttf);
+}
+
+@font-face{
+  font-family: Dosis-SemiBold;
+  src: url(../fonts/Dosis-SemiBold.ttf);
+}
+
+body{
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+                                                /*1vw = 19.2px, 1vh = 10.8px*/
+
+.page{                                /*Вся страница*/
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #3f5fd8 url(../img/pattern-index.png) repeat left top;
+  font-family: Dosis-Regular;
+  color: #fff552;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main{                                /*Середина с содержимым*/
+  background: #3f5fd8;
+  margin: 0;
+  padding: 0;
+  -webkit-flex-basis: 60%;
+      -ms-flex-preferred-size: 60%;
+          flex-basis: 60%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+  
+}
+
+.logo{                                    /*Для Charlie the Unicorn*/
+  margin-top: calc(7.407vh - 1%);  /*80px*/
+  padding: 0;
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+  font-family: Dosis-Bold;
+  font-size: 7.8431372549vh;    /*80px*/
+  line-height: 6.48148148vh;    /*60px*/
+  transition: color 0.5s;
+}
+
+
+.description{                             /*Для описания Sick game...*/
+  font-family: Dosis-ExtraLight;
+  font-size: 3.3333333vh;    /*36px*/
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+}
+.menu{                                    /*Стили меню*/
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+}
+.mobile{
+  display: none;
+}
+.menu_item{
+  display: inline-block;
+  margin-top: 4.4444444vh;    /*новое - 48px, было 57px*/
+  list-style-type: none;
+  font-size: 4.6296296vh;    /*50px*/
+  font-family: Dosis-Medium;
+  line-height: 3.5185vh;    /*38px*/
+}
+.menu_item2, .menu_item3, .menu_item4, .menu_item5{
+  padding-left: 3.8888888888889vh;    /*новое - 42px, старое - 48px*/
+}
+.menu_item:hover{
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+
+.navigation_line div{                     /*Стили кружочков и полоски*/
+  display: inline-block;
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+  margin-top: 1.5740740740vh;    /*17px*/
+}
+
+.line{                                          /*Полоска*/
+  height: 1.851851851vh;    /*20px*/
+  width: 78.148148148148vh;           /*844px*/
+  position: relative;
+  background: url(../img/line.png) repeat-x;
+  background-size: auto 100%;
+}
+
+.circle{                                  /*Все кружочки*/
+  margin: auto 0;
+  width: 1.296296296vh;     /*14px = 20px - 6px граница*/
+  height: 1.296296296vh;
+  border-radius: 1.296296296vh;
+  border: 0.27777777778vh solid #fff552;   /*3px*/
+  background-color: #3f5fd8;
+  position: absolute;
+  top: -1.296296296vh;    /*9px*/
+}
+
+.circle1{
+  left: 4.259259259vh;    /*46px*/
+}
+.circle2{
+  left: 23.2407407407407vh;    /*251px*/
+}
+.circle3{
+  left: 42.962962962962vh;    /*464px*/
+}
+.circle4{
+  left: 56.759259259259vh;    /*631px*/
+}
+.circle5{
+  left: 71.1111111111vh;    /*768px*/
+}
+
+.circle_active{                           /*Стиль кружочка текущей страницы*/
+  background-color: #fff552;
+}
+
+
+.content{                                       /*Стили абзаца с содержимым*/
+  margin-top: 13.009vh;   /*140.5px*/
+  padding: 0 4.42708vw;   /*85px*/
+  font-weight: normal;
+  font-size: 3.3333333vh;    /*36px*/
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+}
+
+.button{                                        /*Стили кнопки*/
+  height: 7.407407407vh;    /*80px*/
+  width: 27.7777777vh;       /*300px*/
+  position: relative;
+  background: #fff552;
+  border-radius: 3.703703703vh;   /*40px*/
+  line-height: 7.407407407vh;    /*80px*/
+  font-size: 3.33333333vh;     /*36px*/
+  font-family: Dosis-Regular;
+}
+
+.index_button{
+  margin-top: 18.98148vh;    /*205px*/
+  color: #3f5fd8;
+}
+
+.index_button:after{
+  display: inline-block;
+  content: "";
+  height: 1.5740740vh;    /*17px*/
+  width: 1.5740740vh;    /*17px*/
+  border-top: 0.0925925vh solid #3f5fd8;    /*1px*/
+  border-right: 0.0925925vh solid #3f5fd8;    /*1px*/
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-left: 1.71296vh;
+  margin-right: -1.71296vh;
+}
+
+                    /*Градиент*/
+
+.index_button{
+  background: #fff552;
+  -webkit-animation: background 7s infinite linear;
+          animation: background 7s infinite linear;
+  /*transition: all 0.1s;*/
+}
+
+@-webkit-keyframes background {
+  0%{
+    background: #fff552;
+  }
+  20%{
+    background: #e2907a;
+  }
+  40%{
+    background: #ff0000;
+  }
+  50%{
+    background: #503461;
+  }
+  60%{
+    background: #2f3262;
+  }
+  70%{
+    background: #50b09b;
+  }
+  80%{
+    background: #b2d179;
+  }
+}
+
+@keyframes background {
+  0%{
+    background: #fff552;
+  }
+  20%{
+    background: #e2907a;
+  }
+  40%{
+    background: #ff0000;
+  }
+  50%{
+    background: #503461;
+  }
+  60%{
+    background: #2f3262;
+  }
+  70%{
+    background: #50b09b;
+  }
+  80%{
+    background: #b2d179;
+  }
+}
+
+
+                                           /*Страница Characters!*/
+                                                    
+                              /*Цвет фона для контента и кружочков*/
+.characters_main{
+  background: #dc2988;
+}
+
+.characters_page{                  /*Паттерн*/
+  background: #dc2988 url(../img/pattern-characters.png) repeat left top;
+}
+
+                                  /*Галерея*/
+                              /*Обертка галереи*/
+.gallery{
+  margin-top: 2.962962963vh;    /*32px*/
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+}
+
+.gallery_item1, .gallery_item2, .gallery_item3,
+.gallery_item4, .gallery_item5, .gallery_item6{
+  margin-right: 1.5625vw;        /*30px*/
+}
+
+.gallery_item1, .gallery_item2, .gallery_item4,
+.gallery_item5, .gallery_item7, .gallery_item8{
+  margin-bottom: 1.85185vh;  /*20px*/ 
+}
+
+
+                                /*Картинки*/  
+.image{
+  width: 12.962962962vh;    /*140px*/
+  height: 12.962962962vh;    /*140px*/
+  background-color: #fff552;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.image>img, .avatar>img{
+  height: 100%;
+  max-height: 100%;
+}
+
+.image:hover{
+  background-color: #a9004c;
+  
+}
+
+                                    /*Стили надписей*/
+.alignment{
+  font-family: Dosis-ExtraLight;
+  font-size: 1.296296296vh;       /*14 px*/
+}
+
+.name{
+  font-family: Dosis-Medium;
+  font-size:  2.2222222222vh;         /*24px*/
+  line-height: 2.685vh;              /*29px*/
+  cursor: pointer;
+}
+
+                                  /*Форма - общие стили*/
+input{
+  display: none;
+}
+
+.form{
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(1, 23, 105, 0.64);
+  display: none;
+  z-index: 1;
+}
+
+.window{
+  width: 42.70833333333vw;    /*820px*/
+  height: 21.875vw;    /*420px*/
+  position: absolute;
+  left: 28.6458333vw;    /*550px*/
+  top: 26.111111vh;    /*282px*/
+  background: #fff552;
+  -webkit-animation: form 0.5s 1 both ease-in-out,
+             trembling 0.2s 1 cubic-bezier(.36,.07,.19,.97) 0.5s;
+          animation: form 0.5s 1 both ease-in-out,
+             trembling 0.2s 1 cubic-bezier(.36,.07,.19,.97) 0.5s;
+}
+
+@-webkit-keyframes form{
+  0%{
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    top: -23vw;
+  }
+  100%{
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes form{
+  0%{
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    top: -23vw;
+  }
+  100%{
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes trembling {
+ 20% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+  
+  50% {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px);
+  }
+
+  90% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+  }
+
+@keyframes trembling {
+ 20% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+  
+  50% {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px);
+  }
+
+  90% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+  }
+
+.avatar{
+  width: 10.41666666666vw;    /*200px*/
+  height: 10.41666666666vw;    /*200px*/
+  background-color: #dc2988;
+  position: absolute;
+  left: 2.08333333333vw;    /*40px*/
+  top: 2.08333333333vw;    /*40px*/
+}
+
+.close{
+  width: 1.92708333vw;    /*37px*/
+  height: 1.92708333vw;    /*37px*/
+  border: solid #dc2988 0.15625vw;    /*3px*/
+  position: absolute;
+  right: 0.52083333333333333vw;   /*10px*/
+  top: 0.52083333333333333vw;   /*10px*/
+  cursor: pointer;
+}
+
+.close:before{
+  content: "";
+  display: inline-block;
+  width: 0.20833333vw;    /*4px*/
+  height: 1.62045vw;    /*22px*/
+  background-color: #dc2988;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: calc(1.62045vw / 2);
+  top: calc((1.92708333vw - 1.62045vw) / 2); /*высота окна close минус высота неповернутой палки делить на 2*/
+}
+
+.close:after{
+  content: "";
+  display: inline-block;
+  width: 0.20833333vw;    /*4px*/
+  height: 1.62045vw;    /*31.112px*/
+  background-color: #dc2988;
+  position: absolute;
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+  left: calc(1.62045vw / 2);
+  top: calc((1.92708333vw - 1.62045vw) / 2); /*высота окна close минус высота неповернутой палки делить на 2*/
+}
+
+
+.form-title, .form-alignment, .form-quote{
+  position: absolute;
+  left: 14.691791666666667vw;    /*280.7px*/
+  color: #90004c;
+  text-align: left;
+}
+
+.form-title{
+  top: 2.08333333333vw;    /*40px*/
+  font-family: Dosis-Medium;
+  font-size: 3.75vw;    /*72px*/
+  line-height: 2.1875vw;    /*42px*/
+}
+.form-alignment{
+  top: 6.052083333vw;    /*116.2px*/
+  font-family: Dosis-Medium;
+  font-size: 1.25vw;    /*24px*/
+}
+.form-quote{
+  top: 8.84375vw;    /*169.8px*/
+  font-family: Dosis-ExtraLight;
+  font-size: 1.875vw;    /*36px*/
+  line-height: 2.1875vw;    /*42px*/
+}
+.form-description{
+  position: absolute;
+  left: 2.08333333333vw;    /*40px*/
+  top: 14.583333333333vw;   /*280px*/
+  color: #90004c;
+  font-family: Dosis-Regular;
+  font-size: 1.25vw;    /*24px*/
+  line-height: 1.5625vw;    /*30px*/
+  text-align: left;
+}
+
+                            /*Включение-выключение формы*/
+#input_capricorn:checked~.form_capricorn{
+  display:block;
+}
+#input_door:checked~.form_door{
+  display:block;
+}
+#input_starfish:checked~.form_starfish{
+  display:block;
+}
+#input_frogrus:checked~.form_frogrus{
+  display:block;
+}
+#input_charlie:checked~.form_charlie{
+  display:block;
+}
+#input_blue:checked~.form_blue{
+  display:block;
+}
+#input_y:checked~.form_y{
+  display:block;
+}
+#input_pink:checked~.form_pink{
+  display:block;
+}
+#input_millipede:checked~.form_millipede{
+  display:block;
+}
+
+                                  /*Кнопки*/
+
+              /*Полоска с кнопками*/
+
+.buttons{
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+  margin-bottom: 1%;
+}
+.characters_button{
+  margin-top: 2.7777777778vh;    /*30px*/
+}
+                /*Стиль самих кнопок*/
+.characters_button .back, .characters_button .next{
+  color: #dc2988;
+}
+.back{
+  margin-right: 1.0416666667vw; /*20px*/
+}
+
+.back_characters:before{
+  display: inline-block;
+  content: "";
+  height: 1.5740740vh;    /*17px*/
+  width: 1.5740740vh;    /*17px*/
+  border-top: 0.0925925vh solid #dc2988;    /*1px*/
+  border-right: 0.0925925vh solid #dc2988;    /*1px*/
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  margin-left: -1.71296vh;
+  margin-right: 1.71296vh;
+}
+
+.next_characters:after{
+  display: inline-block;
+  content: "";
+  height: 1.5740740vh;    /*17px*/
+  width: 1.5740740vh;    /*17px*/
+  border-top: 0.0925925vh solid #dc2988;    /*1px*/
+  border-right: 0.0925925vh solid #dc2988;    /*1px*/
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-left: 1.71296vh;
+  margin-right: -1.71296vh;
+}
+
+
+                                      /*Страница Watch*/
+
+                              /*Цвет фона для контента и кружочков*/
+.watch_main{
+  background: #06c9c8;
+}
+
+.watch_page{                  /*Паттерн*/
+  background: #06c9c8 url(../img/pattern-watch.png) repeat left top;
+}
+
+                          /*Блок с видео*/
+
+.content_video{
+  margin-top: 2.407407407vh;    /*новое - 26px, бфло 30px*/
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+}
+
+.episode{
+  width: 33.3333vh;    /*360px*/
+  height: 21.296296296vh;    /*210px*/
+  border: solid #fff552 0.0925925925vh;    /*1px*/
+}
+
+.episode3, .episode4{
+  margin-left: 3.703703703vh;    /*40px*/
+}
+
+.episode2, .episode4{
+  margin-top: 2.407407407vh;    /*26px*/
+}
+
+.episode_name{
+  font-family: Dosis-Medium;
+  font-size: 3.3333vh;     /*36px*/
+  line-height: 3.518518vh;    /*новое - 38px было 42px*/
+}
+
+.episode_description{
+  font-family: Dosis-Light;
+  font-size: 1.6667vh;    /*18px*/
+ /* line-height: 3.888889vh;    /*42px - убрано, не влезает по высоте*/
+}
+
+
+                       /*Кнопки*/
+
+.watch_button{
+  margin-top: 2.407407vh;    /*26px*/
+}
+
+.watch_button .back, .watch_button .next{
+  color: #06c9c8;
+}
+
+.back_watch:before{
+  display: inline-block;
+  content: "";
+  height: 1.5740740vh;    /*17px*/
+  width: 1.5740740vh;    /*17px*/
+  border-top: 0.0925925vh solid #06c9c8;    /*1px*/
+  border-right: 0.0925925vh solid #06c9c8;    /*1px*/
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  margin-left: -1.71296vh;
+  margin-right: 1.71296vh;
+}
+
+.next_watch:after{
+  display: inline-block;
+  content: "";
+  height: 1.5740740vh;    /*17px*/
+  width: 1.5740740vh;    /*17px*/
+  border-top: 0.0925925vh solid #06c9c8;    /*1px*/
+  border-right: 0.0925925vh solid #06c9c8;    /*1px*/
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-left: 1.71296vh;
+  margin-right: -1.71296vh;
+}
+
+                                      /*Страница Play*/
+
+                              /*Цвет фона для контента и кружочков*/
+.play_main{
+  background: #7e00b8;
+}
+
+.play_page{                  /*Паттерн*/
+  background: #7e00b8 url(../img/pattern-play.png) repeat left top;
+}
+
+                          /*Поле для игры*/
+
+.game_field{
+  margin-top: 4.0740740vh;    /*44px*/
+  width: 97.222222vh;    /*1050px*/
+  height: 50.925925vh;    /*550px*/
+  border: 0.0925925vh solid #fff552;    /*1px*/
+  position: relative;
+}
+
+                    /*Обложка для начала игры*/
+.game_wallpaper{
+  width: 100%;
+  height: 100%;
+  background: url(../img/game_wallpaper.jpg);
+  background-size: 100% auto ;
+  position: absolute;
+}
+
+                    /*Кнопка, чтобы сменить заставку*/
+.game_button{
+  background-color: #00f6ff;
+  color: #7e00b8;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  left: 34.259259vh;    /*370px*/
+  top: 37vh;    /*235px*/
+}
+
+                      /*Переключение заставки*/        
+#start_button:checked~.game_wallpaper{
+  display: none;
+}
+#start_button:checked~.start_button_label{
+  display: none;
+}
+
+
+                       /*Кнопки*/
+
+.play_button{
+  margin-top: 5.0925925vh;    /*55px*/
+}
+
+.play_button .back, .play_button .next{
+  color: #7e00b8;
+}
+
+.back_play:before{
+  display: inline-block;
+  content: "";
+  height: 1.5740740vh;    /*17px*/
+  width: 1.5740740vh;    /*17px*/
+  border-top: 0.0925925vh solid #7e00b8;    /*1px*/
+  border-right: 0.0925925vh solid #7e00b8;    /*1px*/
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  margin-left: -1.71296vh;
+  margin-right: 1.71296vh;
+}
+
+.next_play:after{
+  display: inline-block;
+  content: "";
+  height: 1.5740740vh;    /*17px*/
+  width: 1.5740740vh;    /*17px*/
+  border-top: 0.0925925vh solid #7e00b8;    /*1px*/
+  border-right: 0.0925925vh solid #7e00b8;    /*1px*/
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-left: 1.71296vh;
+  margin-right: -1.71296vh;
+}
+
+                                          /*Страница Credits*/
+
+                              /*Цвет фона для контента и кружочков*/
+.credits_main{
+  background: #e74f00;
+}
+
+.credits_page{                  /*Паттерн*/
+  background: #e74f00 url(../img/pattern-credits.png) repeat left top;
+}
+
+                              /*Про создателей*/
+
+.creators{
+  margin-top: 10vh;    /*стало - 110px было - 123px*/
+  -webkit-flex-basis: 76.42857%;
+      -ms-flex-preferred-size: 76.42857%;
+          flex-basis: 76.42857%;  /*856px / 1120px*/
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+}
+
+.creators_title{
+  -webkit-flex-basis: 76.42857%;
+      -ms-flex-preferred-size: 76.42857%;
+          flex-basis: 76.42857%;
+  font-family: Dosis-ExtraLight;
+  font-size: 2.777777778vh;    /*30px*/
+  /*line-height: 3.88888889vh;    /*42px*/
+}
+.creators_people{
+  margin-top: 4.166666667vh;  /*45px*/
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+}
+
+.creator{
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+}
+
+
+.creator_photo{
+  width: 19.629629vh;  /*212px*/
+  height: 19.629629vh;  /*212px*/
+}
+
+.creator_photo>img{
+  height: 100%;
+  max-height: 100%;
+}
+
+.creator_name{
+  margin-top: 1.38888889vh;    /*15px*/
+  font-family: Dosis-Medium;
+  font-size: 3.33333vh;    /*36px*/
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+}
+
+.creator_role{
+  margin-bottom: 1.481481vh;    /*16px*/
+  font-family: Dosis-Light;
+  font-size: 2.22222vh;    /*24px*/
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+}
+
+.creator_icons{
+  border-top: 1px solid #fff552;
+  padding-top: 0.925925vh;    /*10px*/
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+}
+
+.icon{
+  display: inline-block;
+  width: 3.240740740vh;    /*35px*/
+  height: 3.240740740vh;    /*35px*/
+}
+.site{
+  background: url(../img/site.png);
+  background-size: 100% auto;
+}
+.facebook{
+  background: url(../img/facebook.png);
+  background-size: 100% auto;
+}
+.youtube{
+  background: url(../img/youtube.png);
+  background-size: 100% auto;
+}
+.twitter{
+  background: url(../img/twitter.png);
+  background-size: 100% auto;
+}
+.mail{
+  background: url(../img/mail.png);
+  background-size: 100% auto;
+}
+.linkedin{
+  background: url(../img/linkedin.png);
+  background-size: 100% auto;
+}
+.github{
+  background: url(../img/github.png);
+  background-size: 100% auto;
+}
+.behance{
+  background: url(../img/behance.png);
+  background-size: 100% auto;
+}
+
+                                /*Кнопки*/
+
+.credits_button{
+  margin-top: 9.2vh;    /*стало 100px; было 109px*/
+}
+
+.credits_button .back, .credits_button .next{
+  color: #e74f00;
+}
+
+.back_credits:before{
+  display: inline-block;
+  content: "";
+  height: 1.5740740vh;    /*17px*/
+  width: 1.5740740vh;    /*17px*/
+  border-top: 0.0925925vh solid #e74f00;    /*1px*/
+  border-right: 0.0925925vh solid #e74f00;    /*1px*/
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  margin-left: -1.71296vh;
+  margin-right: 1.71296vh;
+}
+
+                              /*Форма*/
+.check_truth{
+  cursor: pointer;
+}
+.form_truth{
+  display: none;
+  width: 100vw;
+  min-height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(../img/Credits2.jpg);
+  background-size: 100% auto;
+}
+
+.window_truth{
+  width: 46.6145833vw;    /*895px*/
+  height: 34.8958333vw;    /*670px*/
+  position: absolute;
+  left: 26.71875vw;    /*513px*/
+  top: 11.9791667vw;    /*230px*/
+  background: url(../img/spudi.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.close_truth{
+  width: 1.92708333vw;    /*37px*/
+  height: 1.92708333vw;    /*37px*/
+  position: absolute;
+  right: 0.52083333333333333vw;   /*10px*/
+  top: 0.52083333333333333vw;   /*10px*/
+  cursor: pointer;
+  border: solid #e2201e 0.15625vw;    /*3px*/
+  z-index: 10;
+}
+.close_truth:before{
+  content: "";
+  display: inline-block;
+  width: 0.20833333vw;    /*4px*/
+  height: 1.62045vw;    /*22px*/
+  background-color: #e2201e;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: calc(1.62045vw / 2);
+  top: calc((1.92708333vw - 1.62045vw) / 2); /*высота окна close минус высота неповернутой палки делить на 2*/
+  z-index: 10;
+}
+
+.close_truth:after{
+  content: "";
+  display: inline-block;
+  width: 0.20833333vw;    /*4px*/
+  height: 1.62045vw;    /*31.112px*/
+  background-color: #e2201e;
+  position: absolute;
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+  left: calc(1.62045vw / 2);
+  top: calc((1.92708333vw - 1.62045vw) / 2); /*высота окна close минус высота неповернутой палки делить на 2*/
+  z-index: 10;
+}
+
+.truth_content{
+  font-family: Dosis-Bold;
+  font-size: 4.1666667vw;   /*80px*/
+  color: #ffffff;
+  line-height: 2.1875vw;    /*42px*/
+  text-align: center;
+  width: 100%;
+}
+.top{
+  position: absolute;
+  top: 0.78125vw;    /*15px*/
+}
+
+.down{
+  position: absolute;
+  bottom: 1.015625vw;    /*19.5px*/
+}
+
+#truth:checked~.form_truth{
+  display: block;
+}
+
+
+                                    /*МЕДИАЗАПРОСЫ*/
+
+
+                          /*Планшеты с альбомной ориентацией*/
+@media only screen and (max-width: 1024px) and (orientation: landscape){
+
+                            /*Общие стили*/
+.main{
+  -webkit-flex-basis: 80%;
+      -ms-flex-preferred-size: 80%;
+          flex-basis: 80%;
+}
+.navigation_line{
+  display: none;
+}
+
+                              /*Страница Characters*/
+                  /*Форма */
+.window{
+  width: 60vw;    /*820px*/
+  height: 30.731vw;    /*420px*/
+  left: 20vw;    /*550px*/
+}
+.avatar{
+  width: 16vw;    /*200px*/
+  height: 16vw;    /*200px*/
+}
+
+.close{
+  width: 2.70731vw;    /*37px*/
+  height: 2.70731vw;    /*37px*/
+}
+
+.close:before{
+  height: 2.2764878vw;    /*31px*/
+  left: calc(2.2764878vw / 2);
+}
+
+.close:after{
+  height: 2.2764878vw;    /*31.112px*/
+  left: calc(2.2764878vw / 2);
+}
+
+.form-title, .form-alignment, .form-quote{
+  left: 20.539vw;    /*280.7px*/
+}
+
+.form-title{
+  top: 2.08333333333vw;    /*40px*/
+  font-size: 5.26829vw;    /*72px*/
+  line-height: 3.07317vw;    /*42px*/
+}
+.form-alignment{
+  top: 8.5024390vw;    /*116.2px*/
+  font-size: 1.75609vw;    /*24px*/
+}
+.form-quote{
+  top: 12.424390vw;    /*169.8px*/
+  font-size: 2.634146vw;    /*36px*/
+  line-height: 3.07317vw;    /*42px*/
+}
+.form-description{
+  top: 20.487804vw;   /*280px*/
+  font-size: 1.75609vw;    /*24px*/
+  line-height: 2.19512vw;    /*30px*/
+}
+
+                                    /*Имена персонажей в галерее*/
+.alignment{
+  font-size: 2.0370vh;  /*новое - 22px, было 14px*/
+}
+
+.name{
+  font-size: 2.962962vh;    /*новое - 32px, было 24px*/
+}
+
+                              /*Странца Watch*/
+
+.episode_name{
+  font-size: 4.25925vh;     /*новое - 46, было - 36px*/
+}
+
+.episode_description{
+  font-size: 2.592592vh;    /*новое - 28, было - 18px*/
+}
+
+
+                    /*Контент про создателей*/
+
+.creators{
+  margin-top: 6vh;    /* стало произвольно- было - 110px было - 123px*/
+  -webkit-flex-basis: 78%;
+      -ms-flex-preferred-size: 78%;
+          flex-basis: 78%;  /*стало произвольно - 856px / 1120px*/
+}
+
+.creator{
+  margin: 0 1vw;
+}
+
+.creators_title{
+  -webkit-flex-basis: 78%;
+      -ms-flex-preferred-size: 78%;
+          flex-basis: 78%;
+  font-size: 3.703703vh;    /*стало 40, было -30px*/
+}
+.creators_people{
+  margin-top: 3.240740vh;  /*стало 35,было - 45px*/
+}
+
+.creator_photo{
+  width: 27.5vh;  /*стало произвольно, было -212px*/
+  height: 27.5vh;  /*стало произвольно, было -212px*/
+}
+
+.creator_name{
+  margin-top: 1.3vh;    /*стало - произвольно, было 15px*/
+}
+
+.creator_role{
+  font-size: 2.592592vh;    /*стало 28, было -24px*/
+}
+
+.icon{
+  display: inline-block;
+  width: 4.2vh;    /*стало произвольно, было -35px*/
+  height: 4.2vh;    /*стало произвольно, было -35px*/
+}
+
+                    /*Форма*/
+.window_truth{
+  width: 60vw;    /*было 895px*/
+  height: 50vw;    /* было 670px, стало 70*670/895*/
+  left: 20vw;    /*513px*/
+  top: 10vw;    /*230px*/
+  background-size: auto 100%;
+}
+.close_truth{
+  width: 2.70731vw;    /*37px*/
+  height: 2.70731vw;    /*37px*/
+}
+
+.close_truth:before{
+  height: 2.2764878vw;    /*31px*/
+  left: calc(2.2764878vw / 2);
+}
+
+.close_truth:after{
+  height: 2.2764878vw;    /*31.112px*/
+  left: calc(2.2764878vw / 2);
+}
+                  /*Кнопки*/
+.credits_button{
+  margin-top: 7.8vh;    /*стало 100px; было 109px*/
+}
+
+}
+
+                          /*Планшеты с портретной ориентацией*/
+@media only screen and (max-width: 1024px) and (orientation: portrait){
+
+                        /*Общие стили*/
+.main{
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+}
+.navigation_line{
+  display: none;
+}
+.buttons{
+  z-index: 0;
+}
+.characters_button{
+  z-index: 0;
+}
+
+                          /*Мобильное меню*/
+.desktop{
+  display: none;
+}
+.mobile{
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 253px;
+  height: 20vh;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+  position: fixed;
+  z-index: 20000;
+}
+
+                        /*Поле с кнопкой*/
+.mobile_button{
+  height: 20vh;
+  margin-right: 5vh;
+}
+
+                          /*Стили кнопки*/
+.square_button{
+  display: block;
+  width: 7vh;
+  height: 7vh;
+  border-radius: 1.5vh;
+  background-color: #fff552;
+  position: absolute;
+  left: 1vh;
+  top: calc(50% - 3.5vh);
+  z-index: 30000;
+  transition: all 0.2s;
+}
+
+.menu_line{
+  width: 5vh;
+  height: 1vh;
+  border-radius: 0.5vh;
+  position: absolute;
+  left: 1vh;
+}
+
+.menu_line1{
+  top: 1.5vh;
+}
+.menu_line2{
+  top: 3vh;
+}
+.menu_line3{
+  top: 4.5vh;
+}
+
+          /*Цвета для каждой страницы*/
+.menu_line_index{
+  background-color: #3f5fd8;
+  transition: all 0.2s;
+}
+.menu_line_characters{
+  background-color: #dc2988;
+  transition: all 0.2s;
+}
+.menu_line_watch{
+  background-color: #06c9c8;
+  transition: all 0.2s;
+}
+.menu_line_play{
+  background-color: #7e00b8;
+  transition: all 0.2s;
+}
+.menu_line_credits{
+  background-color: #e74f00;
+  transition: all 0.2s;
+}
+
+                      /*Стили скрытого меню*/
+.hidden_menu{
+  background-color: #fff552;
+  width: 30vh;
+  height: 100vh;
+  position: absolute;
+  left: -30vh;
+  top: 0;
+  transition: left 0.2s;
+  z-index: 20000;
+}
+.menu_item{
+  display: block;
+  text-align: right;
+  padding-left: 0;
+  padding-right: 3vh;
+}
+
+.active_menu_item{
+  text-decoration: underline;
+}
+
+.menu_item1{
+  margin-top: calc(50% + 7vh + 3vh);
+}
+
+                /*Цвета для каждой страницы*/
+
+.index_color{
+  color: #3f5fd8;
+}
+.characters_color{
+  color: #dc2988;
+}
+.watch_color{
+  color: #06c9c8;
+}
+.play_color{
+  color: #7e00b8;
+}
+.credits_color{
+  color: #e74f00;
+}
+
+                            /*Включение-выключение меню*/
+
+#hidden_menu_button:checked~.hidden_menu{
+  left: 0vh;
+}
+#hidden_menu_button:checked~.square_button{
+  left: 22vh;
+}
+#hidden_menu_button:checked~.square_button .menu_line{
+  background-color: #fff552;
+}
+
+                    /*Цвета для каждой страницы*/
+
+#hidden_menu_button:checked~.square_button_index{
+  background-color: #3f5fd8;
+}
+#hidden_menu_button:checked~.square_button_characters{
+  background-color: #dc2988;
+}
+#hidden_menu_button:checked~.square_button_watch{
+  background-color: #06c9c8;
+}
+#hidden_menu_button:checked~.square_button_play{
+  background-color: #7e00b8;
+}
+#hidden_menu_button:checked~.square_button_credits{
+  background-color: #e74f00;
+}
+
+
+                                      /*Блок с заголовком*/
+.mobile_logo{
+  -webkit-flex-basis: 80%;
+      -ms-flex-preferred-size: 80%;
+          flex-basis: 80%;
+  height: 20vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.m_logo{                                    /*Для Charlie the Unicorn*/
+  /*margin-top: 6vh;  /*было 80px*/
+  font-family: Dosis-Bold;
+  font-size: 7.5vh;    /*было 80px*/
+  line-height: 6vh;    /*60px*/
+}
+.m_description{                             /*Для описания Sick game...*/
+  font-family: Dosis-ExtraLight;
+  font-size: 3vh;    /*было 36px*/
+}
+
+
+                                                  /*Отступ для контента*/
+.content, .gallery, .content_video, .game_field, .creators{
+  margin-top: 23vh;
+}
+
+                               /*Страница Characters*/
+                  /*Форма */
+.form{
+  z-index: 0;
+  position: relative;
+  height: 52vw;
+}
+
+.window{
+  width: 70vw;    /*новые произвольные значения*/
+  height: 43vw;
+  left: 15vw;
+  top: 7vw;
+  background: none;
+}
+.avatar{
+  display: none;
+}
+
+.close{
+  border-color: #fff552;
+  width: 4vw;    /*37px*/
+  height: 4vw;    /*37px*/
+}
+
+.close:before{
+  height: 3vw;    /*31px*/
+  width: 0.3vw;
+  left: 1.2vw;
+  top: 0.5vw;
+  -webkit-transform: rotate(30deg);
+      -ms-transform: rotate(30deg);
+          transform: rotate(30deg);
+  background-color: #fff552;
+}
+
+.close:after{
+  height: 3vw;    /*31.112px*/
+  width: 0.3vw;
+  left: 2.55vw;
+  top: 0.5vw;
+  -webkit-transform: rotate(-30deg);
+      -ms-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  background-color: #fff552;
+}
+
+.form-description, .form-quote{
+  color: #fff552;
+  left: 0vw;
+}
+
+.form-title, .form-alignment{
+  display: none;
+}
+
+.form-quote{
+  top: 9vw;    /*169.8px*/
+  font-size: 4.2vw;    /*36px*/
+  line-height: 3.8vw;    /*42px*/
+  text-align: center;
+}
+.form-description{
+  top: 20vw;   /*280px*/
+  font-size: 3.5vw;    /*24px*/
+  line-height: 4vw;    /*30px*/
+}
+
+.gallery_line{
+  -webkit-flex-basis: 80%;
+      -ms-flex-preferred-size: 80%;
+          flex-basis: 80%;
+}
+.image{
+  width: 30vw;
+  height: 30vw;
+}
+
+.gallery_item1, .gallery_item2, .gallery_item3, .gallery_item4,
+.gallery_item5, .gallery_item6, .gallery_item7, .gallery_item8,
+.gallery_item9{
+  margin: 4vw 0;
+}
+                                    /*Имена персонажей в галерее*/
+.alignment{
+  font-size: 3vw;  /*новое - 22px, было 14px*/
+  line-height: 5vw;
+}
+
+.name{
+  font-size: 5vw;    /*новое - 32px, было 24px*/
+  line-height: 5vw;
+}
+
+                                    /*Имена персонажей в галерее*/
+.alignment{
+  font-size: 2.0370vh;  /*новое - 22px, было 14px*/
+}
+
+.name{
+  font-size: 3.4vh;    /*новое - 32px, было 24px*/
+}
+
+                              /*Странца Watch*/
+
+.episode_name{
+  font-size: 4.25925vh;     /*новое - 46, было - 36px*/
+}
+
+.episode_description{
+  font-size: 2.592592vh;    /*новое - 28, было - 18px*/
+}
+
+                            /*Страница Play*/
+.game_field{
+  width: 80vw;    /*произвольно*/
+  height: 41.904vw;    
+  border: 0.0925925vh solid #fff552;    /*1px*/
+  position: relative;
+}
+
+.game_button{
+  z-index: 2;
+  left: calc(50% - (27.7777777vh/2));   
+   top: calc(50% - (7.407407407vh/2));
+}
+
+                    /*Контент про создателей*/
+
+.creators{
+  -webkit-flex-basis: 78%;
+      -ms-flex-preferred-size: 78%;
+          flex-basis: 78%;  /*стало произвольно - 856px / 1120px*/
+}
+
+.creator{
+  margin: 0 1vw;
+}
+
+.creators_title{
+  -webkit-flex-basis: 78%;
+      -ms-flex-preferred-size: 78%;
+          flex-basis: 78%;
+  font-size: 3.703703vh;    /*стало 40, было -30px*/
+}
+
+.creators_people{
+  margin-top: 3.240740vh;  /*стало 35,было - 45px*/
+}
+
+.creator_photo{
+  width: 30vw;  /*стало произвольно, было -212px*/
+  height: 30vw;  /*стало произвольно, было -212px*/
+}
+
+.creator_name{
+  margin-top: 5vw;    /*стало - произвольно, было 15px*/
+}
+
+.creator_role{
+  font-size: 3vw;    /*стало 28, было -24px*/
+}
+
+.icon{
+  display: inline-block;
+  width: 5vw;    /*стало произвольно, было -35px*/
+  height: 5vw;    /*стало произвольно, было -35px*/
+}
+
+                    /*Форма*/
+.form_truth{
+  z-index: 40000;
+}
+
+.window_truth{
+  width: 60vw;    /*было 895px*/
+  height: 50vw;    /* было 670px, стало 70*670/895*/
+  left: 20vw;    /*513px*/
+  top: 30vw;    /*230px*/
+  z-index: 50000;
+  background: url(../img/spudi.jpg);
+  background-size: auto 100%;
+}
+.close_truth{
+  width: 2.70731vw;    /*37px*/
+  height: 2.70731vw;    /*37px*/
+  transform: scale(2) translate3D(-1vw, 1vw, 0);
+}
+
+.close_truth:before{
+  height: 2.2764878vw;    /*31px*/
+  left: calc(2.2764878vw / 2);
+}
+
+.close_truth:after{
+  height: 2.2764878vw;    /*31.112px*/
+  left: calc(2.2764878vw / 2);
+}
+                  /*Кнопки*/
+.credits_button{
+  z-index: 40000;
+  margin-top: 7.8vh;    /*стало 100px; было 109px*/
+}
+}
+
+/*Телефоны*/
+@media only screen and (max-width: 768px){
+
+                        /*Общие стили*/
+.main{
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+}
+.navigation_line{
+  display: none;
+}
+.buttons{
+  z-index: 0;
+}
+.characters_button{
+  z-index: 0;
+}
+
+                          /*Мобильное меню*/
+.desktop{
+  display: none;
+}
+.mobile{
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 253px;
+  height: 20vh;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+  position: fixed;
+  z-index: 20000;
+}
+
+                        /*Поле с кнопкой*/
+.mobile_button{
+  height: 20vh;
+  margin-right: 5vh;
+}
+
+                          /*Стили кнопки*/
+.square_button{
+  display: block;
+  width: 7vh;
+  height: 7vh;
+  background-color: #fff552;
+  position: absolute;
+  left: 1vh;
+  top: 5vh;
+  z-index: 30000;
+  transition: all 0.2s;
+}
+
+.menu_line{
+  width: 5vh;
+  height: 1vh;
+  border-radius: 0.5vh;
+  position: absolute;
+  left: 1vh;
+}
+
+.menu_line1{
+  top: 1.5vh;
+}
+.menu_line2{
+  top: 3vh;
+}
+.menu_line3{
+  top: 4.5vh;
+}
+
+          /*Цвета для каждой страницы*/
+.menu_line_index{
+  background-color: #3f5fd8;
+  transition: all 0.2s;
+}
+.menu_line_characters{
+  background-color: #dc2988;
+  transition: all 0.2s;
+}
+.menu_line_watch{
+  background-color: #06c9c8;
+  transition: all 0.2s;
+}
+.menu_line_play{
+  background-color: #7e00b8;
+  transition: all 0.2s;
+}
+.menu_line_credits{
+  background-color: #e74f00;
+  transition: all 0.2s;
+}
+
+                      /*Стили скрытого меню*/
+.hidden_menu{
+  background-color: #fff552;
+  width: 30vh;
+  height: 100vh;
+  position: absolute;
+  left: -30vh;
+  top: 0;
+  transition: left 0.2s;
+  z-index: 20000;
+}
+.menu_item{
+  display: block;
+  text-align: right;
+  padding-left: 0;
+  padding-right: 3vh;
+}
+
+.active_menu_item{
+  text-decoration: underline;
+}
+
+.menu_item1{
+  margin-top: calc(50% + 7vh + 3vh);
+}
+
+                /*Цвета для каждой страницы*/
+
+.index_color{
+  color: #3f5fd8;
+}
+.characters_color{
+  color: #dc2988;
+}
+.watch_color{
+  color: #06c9c8;
+}
+.play_color{
+  color: #7e00b8;
+}
+.credits_color{
+  color: #e74f00;
+}
+
+                            /*Включение-выключение меню*/
+
+#hidden_menu_button:checked~.hidden_menu{
+  left: 0vh;
+}
+#hidden_menu_button:checked~.square_button{
+  left: 22vh;
+}
+#hidden_menu_button:checked~.square_button .menu_line{
+  background-color: #fff552;
+}
+
+                    /*Цвета для каждой страницы*/
+
+#hidden_menu_button:checked~.square_button_index{
+  background-color: #3f5fd8;
+}
+#hidden_menu_button:checked~.square_button_characters{
+  background-color: #dc2988;
+}
+#hidden_menu_button:checked~.square_button_watch{
+  background-color: #06c9c8;
+}
+#hidden_menu_button:checked~.square_button_play{
+  background-color: #7e00b8;
+}
+#hidden_menu_button:checked~.square_button_credits{
+  background-color: #e74f00;
+}
+
+
+                                      /*Блок с заголовком*/
+.mobile_logo{
+  -webkit-flex-basis: 80%;
+      -ms-flex-preferred-size: 80%;
+          flex-basis: 80%;
+  height: 20vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.m_logo{                                    /*Для Charlie the Unicorn*/
+  /*margin-top: 6vh;  /*было 80px*/
+  font-family: Dosis-Bold;
+  font-size: 7.5vh;    /*было 80px*/
+  line-height: 6vh;    /*60px*/
+  width: 100%;
+}
+.m_description{                             /*Для описания Sick game...*/
+  font-family: Dosis-ExtraLight;
+  font-size: 3vh;    /*было 36px*/
+  width: 100%;
+}
+
+
+                                                  /*Отступ для контента*/
+.content, .gallery, .content_video, .game_field, .creators{
+  margin-top: 23vh;
+}
+
+                              /*Страница Characters*/
+                  /*Форма */
+.form{
+  z-index: 0;
+  position: relative;
+  height: 52vw;
+}
+
+.window{
+  width: 70vw;    /*новые произвольные значения*/
+  height: 43vw;
+  left: 15vw;
+  top: 7vw;
+  background: none;
+}
+.avatar{
+  display: none;
+}
+
+.close{
+  border-color: #fff552;
+  width: 4vw;    /*37px*/
+  height: 4vw;    /*37px*/
+}
+
+.close:before{
+  height: 3vw;    /*31px*/
+  width: 0.3vw;
+  left: 1.2vw;
+  top: 0.5vw;
+  -webkit-transform: rotate(30deg);
+      -ms-transform: rotate(30deg);
+          transform: rotate(30deg);
+  background-color: #fff552;
+}
+
+.close:after{
+  height: 3vw;    /*31.112px*/
+  width: 0.3vw;
+  left: 2.55vw;
+  top: 0.5vw;
+  -webkit-transform: rotate(-30deg);
+      -ms-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  background-color: #fff552;
+}
+
+.form-description, .form-quote{
+  color: #fff552;
+  left: 0vw;
+}
+
+.form-title, .form-alignment{
+  display: none;
+}
+
+.form-quote{
+  top: 9vw;    /*169.8px*/
+  font-size: 4.2vw;    /*36px*/
+  line-height: 3.8vw;    /*42px*/
+  text-align: center;
+}
+.form-description{
+  top: 20vw;   /*280px*/
+  font-size: 3.5vw;    /*24px*/
+  line-height: 4vw;    /*30px*/
+}
+
+.gallery_line{
+  -webkit-flex-basis: 80%;
+      -ms-flex-preferred-size: 80%;
+          flex-basis: 80%;
+}
+.image{
+  width: 30vw;
+  height: 30vw;
+}
+
+.gallery_item1, .gallery_item2, .gallery_item3, .gallery_item4,
+.gallery_item5, .gallery_item6, .gallery_item7, .gallery_item8,
+.gallery_item9{
+  margin: 4vw 0;
+}
+                                    /*Имена персонажей в галерее*/
+.alignment{
+  font-size: 3vw;  /*новое - 22px, было 14px*/
+  line-height: 5vw;
+}
+
+.name{
+  font-size: 5vw;    /*новое - 32px, было 24px*/
+  line-height: 5vw;
+}
+
+                              /*Странца Watch*/
+
+.video_line{
+  -webkit-flex-basis: 80%;
+      -ms-flex-preferred-size: 80%;
+          flex-basis: 80%;
+}
+
+.episode{
+  margin: auto;
+}
+
+.episode_name{
+  font-size: 5vw;     /*новое - 46, было - 36px*/
+  line-height: 6vw;
+  margin-bottom: 1vw;
+}
+
+.episode_description{
+  font-size: 3vw;    /*новое - 28, было - 18px*/
+}
+
+                            /*Страница Play*/
+.game_field{
+  width: 80vw;    /*произвольно*/
+  height: 41.904vw;    
+  border: 0.0925925vh solid #fff552;    /*1px*/
+  position: relative;
+}
+
+.game_button{
+  z-index: 2;
+  left: calc(50% - (27.7777777vh/2));   
+  top: calc(50% - (7.407407407vh/2));
+}
+
+                    /*Контент про создателей*/
+
+.creators{
+  -webkit-flex-basis: 78%;
+      -ms-flex-preferred-size: 78%;
+          flex-basis: 78%;  /*стало произвольно - 856px / 1120px*/
+}
+
+.creator{
+  margin: 0 1vw;
+}
+
+.creators_title{
+  -webkit-flex-basis: 78%;
+      -ms-flex-preferred-size: 78%;
+          flex-basis: 78%;
+  font-size: 3.703703vh;    /*стало 40, было -30px*/
+}
+.creators_people{
+  margin-top: 3.240740vh;  /*стало 35,было - 45px*/
+}
+
+.creator_photo{
+  width: 30vw;  /*стало произвольно, было -212px*/
+  height: 30vw;  /*стало произвольно, было -212px*/
+}
+
+.creator_name{
+  margin-top: 5vw;    /*стало - произвольно, было 15px*/
+}
+
+.creator_role{
+  font-size: 3vw;    /*стало 28, было -24px*/
+}
+
+.icon{
+  display: inline-block;
+  width: 5vw;    /*стало произвольно, было -35px*/
+  height: 5vw;    /*стало произвольно, было -35px*/
+}
+
+                    /*Форма*/
+.form_truth{
+  z-index: 40000;
+}
+
+.window_truth{
+  width: 60vw;    /*было 895px*/
+  height: 50vw;    /* было 670px, стало 70*670/895*/
+  left: 20vw;    /*513px*/
+  top: 30vw;    /*230px*/
+  z-index: 50000;
+  background: url(../img/spudi.jpg);
+  background-size: auto 100%;
+}
+.close_truth{
+  width: 2.70731vw;    /*37px*/
+  height: 2.70731vw;    /*37px*/
+  transform: scale(2) translate3D(-1vw, 1vw, 0);
+}
+
+.close_truth:before{
+  height: 2.2764878vw;    /*31px*/
+  left: calc(2.2764878vw / 2);
+}
+
+.close_truth:after{
+  height: 2.2764878vw;    /*31.112px*/
+  left: calc(2.2764878vw / 2);
+}
+                  /*Кнопки*/
+.credits_button{
+  z-index: 40000;
+  margin-top: 7.8vh;    /*стало 100px; было 109px*/
+}
+}

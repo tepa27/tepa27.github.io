@@ -1,0 +1,23 @@
+// base size
+
+$base-font: 14px;
+
+// sizes
+$footer-height: #{77px / $base-font}rem;
+$header-height: #{76px / $base-font}rem;
+
+$sidebar-width: 13%;
+$main-content-width: 87%;
+
+$content-margin: #{20px / $base-font}rem;
+
+// colors
+$brand-color: #1c5bc3;
+$primary-dark: #221f1f;
+$primary-light: #ffffff;
+
+$footer-bg: $brand-color;
+$header-bg: $brand-color;
+
+$footer-color: $primary-light;
+$header-color: $primary-light;

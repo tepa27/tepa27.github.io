@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Charlie the Unikiller Game</title>
+        <link rel="icon" href="assets/img/favicon_charlie.ico" type="image/vnd.microsoft.icon">
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+        <link rel="stylesheet" href="assets/css/style-game.css" type="text/css" />
+    </head>
+    <body class="play_main">
+        <div class="page play_page">
+            <div class="main play_main">
+                
+                <!--Шапка-->
+                <header class="header desktop">
+                    <div class="logo"><a href="index.html">Charlie the Unicorn</a></div>
+                    <div class="description">Sick game for sick bastards</div>
+                </header>
+                
+                <!--Меню-->
+                <nav class="menu desktop">
+                    <li class="menu_item menu_item1"><a href="index.html">Home</a></li>
+                    <li class="menu_item menu_item2"><a href="characters.html">Characters</a></li>
+                    <li class="menu_item menu_item3"><a href="watch.html">Watch</a></li>
+                    <li class="menu_item menu_item4"><a href="play.html">Play</a></li>
+                    <li class="menu_item menu_item5"><a href="credits.html">Credits</a></li>
+                </nav>
+                <div class="navigation_line">
+                    <div class="line">
+                    <a href="index.html">
+                        <div class="circle circle1 play_main"></div>
+                    </a>
+                    
+                    <a href="characters.html">
+                        <div class="circle circle2 play_main"></div>
+                    </a>
+                    
+                    <a href="watch.html">
+                        <div class="circle circle3 play_main"></div>
+                    </a>
+                    
+                    <a href="play.html">
+                        <div class="circle circle4 circle_active"></div>
+                    </a>
+                   
+                    <a href="credits.html">
+                        <div class="circle circle5 play_main"></div>
+                    </a>
+                   </div>
+                </div>
+                
+                 <!--Мобильное меню-->
+                <div class="menu mobile">
+                    <div class="mobile_button">
+                        <input type="checkbox" id="hidden_menu_button"/>
+                        <label for="hidden_menu_button" class="square_button square_button_play">
+                            <div class="menu_line menu_line1 menu_line_play"></div>
+                            <div class="menu_line menu_line2 menu_line_play"></div>
+                            <div class="menu_line menu_line3 menu_line_play"></div>
+                        </label>
+                        <nav class="hidden_menu">
+                            <li class="menu_item menu_item1 play_color"><a href="index.html">Home</a></li>
+                            <li class="menu_item menu_item2 play_color"><a href="characters.html">Characters</a></li>
+                            <li class="menu_item menu_item3 play_color"><a href="watch.html">Watch</a></li>
+                            <li class="menu_item menu_item4 play_color active_menu_item"><a href="play.html">Play</a></li>
+                            <li class="menu_item menu_item5 play_color"><a href="credits.html">Credits</a></li>
+                        </nav>
+                    </div>
+                    <div class="mobile_logo menu_line_play">
+                        <a href="index.html"><div class="m_logo">Charlie the Unicorn</div></a>
+                        <div class="m_description">Sick game fo sick bastards</div>
+                    </div>
+                </div>
+                
+                
+                <!--Поле для игры-->
+                <div class="game_field">
+                    
+                    <!--Заставка для начала игры-->
+                    <input type="checkbox" id="start_button"/>
+                    <label class="start_button_label" for="start_button">
+                        <div class="game_button button">PLAY</div>
+                    </label>
+                    
+                    <div class="game_wallpaper"></div>
+                    
+                    <div class="game_level" id="level1">
+                        <div class="timer">Level 1<span id="timer">30</span> 
+                            <span id="points">0</span> Points</div>
+                        <div class="unicorn" id="unicorn"></div>
+                    </div>
+                    
+                    <div class="congratulations_window" id="score_window">
+                        <div class="buttons level_buttons">
+                            <a class="button restart" href="play.html" title="Reload the page">RESTART</a>
+                            <label class="button next_level" for="final_window_change">FINAL</label>
+                        </div>
+                    </div>
+                    
+                    <input type="checkbox" id="final_window_change"/>
+                    <div class="final_window"></div>
+                    
+                </div>
+                
+                <!--Кнопки-->
+                <div class="play_button buttons">
+                    <a href="watch.html"><div class="back button back_play">
+                    BACK
+                    </div></a>
+                    <a href="credits.html"><div class="next button next_play">
+                    NEXT
+                    </div></a>
+                </div>
+               
+            </div>
+        </div>
+        <script type="text/javascript" src="assets/js/script.js"></script>
+    </body>
+</html>

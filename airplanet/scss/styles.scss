@@ -1,0 +1,16 @@
+// специальные sass файлы
+@import "helpers/_variables.scss";
+@import "helpers/_mixins.scss";
+
+// базовые файлы
+@import "base/_normalize.scss";
+@import "base/_fonts.scss";
+@import "base/_main.scss";
+
+// файлы форматирования элементов страницы
+@import "layout/_footer.scss";
+@import "layout/_header.scss";
+@import "layout/_sidebar.scss";
+@import "layout/_main-content.scss";
+
+// файлы компонентов интерфейса
