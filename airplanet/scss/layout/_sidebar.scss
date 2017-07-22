@@ -2,14 +2,61 @@
   float: left;
 
   width: $sidebar-width;
-  min-width: 115px;
-  height: 100px;
-
-  background: pink;
 }
 
-.menu{
-  width: 105px;
-  height: 18px;
-  background: blue;
+.navigation__item{
+  color: $menu-color;
+
+  font-size: $menu-size;
+  font-weight: $bold;
+  text-transform: uppercase;
+
+  transition: color .3s;
+    &:hover{
+      color: $menu-active-color;
+    }
+}
+
+.navigation__item--active{
+  color: $menu-active-color;
+}
+
+.navigation__link{
+  display: block;
+  position: relative;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+
+  color: inherit;
+  &::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('..img/icons/spritesheet.png');
+    background-repeat: no-repeat;
+    }
+}
+
+.navigation__link--main::before{
+    width: 18px;
+    height: 18px;
+    background-position: -357px -15px;
+}
+.navigation__link--team{
+  &::before{
+    width: 23px;
+    height: 18px;
+    background-position: -453px -15px;
+  }
+}
+.navigation__link--feed{
+  &::before{
+    width: 21px;
+    height: 19px;
+    background-position: -155px -15px;
+  }
 }

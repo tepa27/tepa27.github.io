@@ -21,3 +21,16 @@ $header-bg: $brand-color;
 
 $footer-color: $primary-light;
 $header-color: $primary-light;
+
+$content-color: $primary-dark;
+
+$menu-color: $brand-color;
+$menu-active-color: $primary-dark;
+
+//fonts
+$bold: 700;
+
+$h1-size: #{49px / $base-font}rem;
+$h2-size: #{14px / $base-font}rem;
+
+$menu-size: #{12px / $base-font}rem;

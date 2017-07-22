@@ -4,3 +4,26 @@
   background-color: $header-bg;
   color: $header-color;
 }
+
+.header__col{
+  float: left;
+  width: 50%;
+}
+
+.phone{
+  color: inherit;
+
+  font-size: 1.5rem;
+  font-weight: $bold;
+}
+
+.popup__top{
+  text-decoration: underline;
+  font-weight: $bold;
+
+  transition: opacity .3s;
+  opacity: .8;
+    &:hover{
+      opacity: 1;
+    }
+}

@@ -10,24 +10,91 @@
 </head>
 <body>
   <div class="wrapper">
-    <header class="header"></header>
+<!-- HEADER -->
+    <header class="header">
+      <div class="container clearfix">
+        <div class="header__col">
+          <a href="index.html" class="logo">
+            <img src="img/logos/logo-main.png" alt="логотип" class="logo__pic">
+          </a>
+        </div>
+        <div class="header__col">
+          <a href="tel:+388000039210" class="phone">
+            8 (800) 00-392-10
+          </a>
+          <div class="popup">
+            <div class="popup__container">
+              <div class="popup__top">График работы</div>
+              <div class="popup__content"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <div class="container clearfix">
+<!-- MENU -->
       <aside class="sidebar">
-        <div class="menu"></div>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item navigation__item--active">
+              <a href="" class="navigation__link navigation__link--main">
+                Главная
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link navigation__link--team">
+                Экипаж
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link navigation__link--feed">
+                Отзывы
+              </a>
+            </li>
+          </ul>
+        </nav>
       </aside>
+<!-- MAIN-CONTENT -->
       <main class="main-content"></main>
     </div>
   </div>
+<!-- FOOTER -->
   <footer class="footer">
     <div class="container clearfix">
       <div class="footer__col">
-        <div class="copyright"></div>
+        <div class="copyright">Сделано с любовью и старанием
+          на курсе &laquo;HTML + CSS&raquo; в <span class="copyright__school">LoftSchool</span>.
+          Автор работы: <span class="copyright__author">Чурилович Глафира</span>
+        </div>
       </div>
       <div class="footer__col">
-        <div class="logo"></div>
+        <a href="index.html" class="logo">
+          <img src="img/logos/logo-main.png" alt="логотип" class="logo__pic">
+        </a>
       </div>
       <div class="footer__col">
-        <div class="socials"></div>
+        <div class="social">
+            <h2 class="social__title">
+              Наши социальные сети
+            </h2>
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="#" class="social__link social__link--vk">Вконтакте</a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link social__link--fb">Фейсбук</a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link social__link--google">Гугл+</a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link social__link--tw">Твиттер</a>
+              </li>
+              <li class="social__item">
+                <a href="mailto:#" class="social__link social__link--mail">Почта</a>
+              </li>
+            </ul>
+        </div>
       </div>
     </div>
   </footer>

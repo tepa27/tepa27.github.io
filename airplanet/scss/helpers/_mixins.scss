@@ -8,3 +8,14 @@
 @mixin content-margin(){
   margin: 0 $content-margin;
 }
+
+@mixin pics(){
+  max-width: 100%;
+}
+
+@mixin truncate() {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-indent: 100%;
+}
