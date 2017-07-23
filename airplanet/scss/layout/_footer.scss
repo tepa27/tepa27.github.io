@@ -16,6 +16,15 @@ body{
 .footer__col{
   float: left;
   width: 33.3%;
+  height: $footer-height;
+}
+
+.footer__col--left, .footer__col--right{
+  padding-top: $footer-padding-top;
+}
+
+.footer__col--middle{
+  position: relative;
 }
 
 .copyright{
@@ -23,6 +32,7 @@ body{
 }
 
 .copyright__school{
+  color: inherit;
   font-weight: $bold;
   text-decoration: underline;
 }
@@ -31,8 +41,32 @@ body{
   font-weight: $bold;
 }
 
+.logo{
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .logo__pic{
   @include pics;
+  
+}
+
+.footer__col--right{
+  text-align: right;
+}
+
+.social{
+  display: inline-block;
+
+  text-align: left;
+}
+
+.social__list{
+  margin-left: -10px;
+  margin-top: 5px;
 }
 
 .social__title{
@@ -43,6 +77,8 @@ body{
   @include truncate();
 
   display: inline-block;
+
+  margin-left: 10px;
 
   width: 20px;
   height: 20px;
@@ -58,7 +94,7 @@ body{
   background-image: url('../img/icons/spritesheet.png');
   background-repeat: no-repeat;
 
-  transition: opacity .3s;
+  @include transition(opacity);
   opacity: .8;
     &:hover{
       opacity: 1;

@@ -14,8 +14,16 @@
 }
 
 @mixin truncate() {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-indent: 100%;
+}
+
+@mixin spacing{
+  letter-spacing: $spacing;
+}
+
+@mixin transition($criteria){
+  transition: $criteria .3s;
 }

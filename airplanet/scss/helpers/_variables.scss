@@ -11,6 +11,12 @@ $main-content-width: 87%;
 
 $content-margin: #{20px / $base-font}rem;
 
+// padding, margin
+
+$footer-padding-top: #{10px / $base-font}rem;
+$header-padding-top: #{12px / $base-font}rem;
+$menu-padding-top: #{30px / $base-font}rem;
+
 // colors
 $brand-color: #1c5bc3;
 $primary-dark: #221f1f;
@@ -34,3 +40,5 @@ $h1-size: #{49px / $base-font}rem;
 $h2-size: #{14px / $base-font}rem;
 
 $menu-size: #{12px / $base-font}rem;
+
+$spacing: 1px;

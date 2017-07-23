@@ -8,6 +8,21 @@
 .header__col{
   float: left;
   width: 50%;
+  height: $header-height;
+}
+
+.header__col--left{
+  position: relative;
+}
+
+.header__logo{
+  left: 0;
+  transform: translate(0, -50%);
+}
+
+.header__col--right{
+  text-align: right;
+  padding-top: $header-padding-top;
 }
 
 .phone{
@@ -21,7 +36,9 @@
   text-decoration: underline;
   font-weight: $bold;
 
-  transition: opacity .3s;
+  cursor: pointer;
+
+  @include transition(opacity);
   opacity: .8;
     &:hover{
       opacity: 1;
