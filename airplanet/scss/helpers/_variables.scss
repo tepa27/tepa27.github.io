@@ -9,7 +9,9 @@ $header-height: #{76px / $base-font}rem;
 $sidebar-width: 13%;
 $main-content-width: 87%;
 
-$content-margin: #{20px / $base-font}rem;
+$content-padding: #{20px / $base-font}rem;
+
+$popup-width: #{164px / $base-font}rem;
 
 // padding, margin
 
@@ -24,6 +26,7 @@ $primary-light: #ffffff;
 
 $footer-bg: $brand-color;
 $header-bg: $brand-color;
+$popup-bg: $primary-light;
 
 $footer-color: $primary-light;
 $header-color: $primary-light;
@@ -42,3 +45,11 @@ $h2-size: #{14px / $base-font}rem;
 $menu-size: #{12px / $base-font}rem;
 
 $spacing: 1px;
+
+//decoration
+$border: 3px;
+
+//медиазапросы
+$screen-small: 530px;
+$screen-medium: 770px;
+$screen-large: 1100px;

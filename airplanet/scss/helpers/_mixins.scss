@@ -5,8 +5,8 @@
   color: $color;
 }
 
-@mixin content-margin(){
-  margin: 0 $content-margin;
+@mixin content-padding(){
+  margin: 0 $content-padding;
 }
 
 @mixin pics(){
@@ -26,4 +26,31 @@
 
 @mixin transition($criteria){
   transition: $criteria .3s;
+}
+
+//медиазапросы
+@mixin mq-small-up{
+  @media (min-width: $screen-small){
+    @content;
+  }
+}
+@mixin mq-small{
+  @media (min-width: $screen-small) and (max-width: $screen-medium - 1px){
+    @content;
+  }
+}
+@mixin mq-medium-up{
+  @media (min-width: $screen-medium){
+    @content;
+  }
+}
+@mixin mq-medium{
+  @media (min-width: $screen-medium) and (max-width: $screen-large - 1px){
+    @content;
+  }
+}
+@mixin mq-large-up{
+  @media (min-width: $screen-large){
+    @content;
+  }
 }
