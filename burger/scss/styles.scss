@@ -1,0 +1,12 @@
+// специальные sass файлы
+@import "helpers/_variables.scss";
+@import "helpers/_mixins.scss";
+
+// базовые файлы
+@import "base/_normalize.scss";
+@import "base/_fonts.scss";
+@import "base/_main.scss";
+
+//блоки страницы
+@import "layout/_section-first.scss";
+@import "layout/_header.scss";

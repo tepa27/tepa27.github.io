@@ -1,0 +1,6 @@
+@mixin heading ($color){
+  font-family: "Gagalin";
+  font-size: $h1-size;
+  text-transform: uppercase;
+  color: $color;
+}
