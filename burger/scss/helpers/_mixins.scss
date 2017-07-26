@@ -1,6 +1,37 @@
-@mixin heading ($color){
+@mixin h1($color){
   font-family: "Gagalin";
+  font-weight: 400;
   font-size: $h1-size;
   text-transform: uppercase;
   color: $color;
+}
+
+@mixin h2{
+  font-family: "Lifehack";
+  font-weight: 500;
+  font-size: $h2-size;
+  text-transform: lowercase;
+  color: $h2-color;
+}
+
+@mixin button(){
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: $button-bg;
+  color:$button-color;
+  &:hover{
+    background-color: $button-hover;
+  }
+}
+
+@mixin arrow($deg){
+  width: 29px;
+  height: 29px;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: transparent;
+  border-bottom-color: $arrow-color;
+  border-right-color: $arrow-color;
+  transform: rotate(#{$deg}deg);
 }

@@ -1,0 +1,45 @@
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 95%;
+}
+
+.menu__item{
+  display: inline-block;
+
+  position: relative;
+  padding: 13px 15px 13px 17.5px;
+  &::before{
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%;
+    background: white;
+  }
+}
+
+.menu__item{
+  &:first-child, &:last-child{
+    &::before{
+      background: transparent;
+    }
+  }
+}
+
+.menu__link{
+  text-transform: uppercase;
+  color: $menu-color;
+}
+
+.menu__button{
+  @include button;
+}

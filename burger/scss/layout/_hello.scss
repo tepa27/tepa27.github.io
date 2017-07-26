@@ -1,0 +1,16 @@
+.hello{
+  background-color: #1f2122;
+}
+
+.hello__heading{
+  @include h1($primary-brand);
+}
+
+.hello__second-heading{
+  @include h2();
+}
+
+.hello__scroll{
+  display: block;
+  @include arrow(45);
+}
