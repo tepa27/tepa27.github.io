@@ -1,5 +1,5 @@
 .hello{
-  background-color: #1f2122;
+  background-color: $primary-dark;
 }
 
 .hello__wrapper{
@@ -31,21 +31,27 @@
   align-items: center;
 }
 
-.main-content__half{
+.hello__half{
   width: 50%;
 }
 
-.main-content__heading{
-  @include h1($primary-brand);
+.img{
+  @include image;
 }
 
-.main-content__second-heading{
+.hello__heading{
+  @include h1($primary-brand);
+  line-height: 1.6;
+}
+
+.hello__second-heading{
   @include h2();
+  line-height: 1;
 }
 
 .hello__scroll{
   width: 100%;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   text-align: center;
 
   flex-grow: 0;

@@ -1,0 +1,48 @@
+.usp{
+  background-color: $primary-brand;
+  background-image: url('../img/bg/bg-section2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.usp__wrapper{
+  padding: 75px 90px;
+}
+
+.usp__heading{
+  @include h1($primary-dark);
+  text-align: center;
+}
+
+.usp__list{
+  margin-top: 10vh;
+}
+
+.usp__item{
+  display: inline-block;
+  
+  padding: 0 5px;
+  width: 32%;
+
+  vertical-align: top;
+  text-align: center;
+}
+
+.usp__pic{
+  @include image;
+}
+
+.usp__title{
+  padding-top: 30px;
+
+  font-family: "Lifehack";
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.usp__description{
+  padding-top: 12px;
+
+  font-family: "Ubuntu";
+  font-weight: 300;
+}

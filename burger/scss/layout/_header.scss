@@ -7,19 +7,19 @@
 }
 
 .logo{
-  max-width: 100px;
+  max-width: 150px;
   height: 100%;
 }
 
 .logo__pic{
-  max-width: 100%;
+  @include image();
 }
 
 .menu__item{
   display: inline-block;
 
   position: relative;
-  padding: 13px 15px 13px 17.5px;
+  padding: 12px 15px 13px 17.5px;
   &::before{
     content: '';
     position: absolute;
@@ -27,12 +27,13 @@
     top: 50%;
     transform: translateY(-50%);
 
-    width: 5px;
-    height: 5px;
+    width: 4px;
+    height: 4px;
 
     border-radius: 50%;
     background: white;
   }
+
 }
 
 .menu__item{
@@ -40,6 +41,9 @@
     &::before{
       background: transparent;
     }
+  }
+  &:last-child{
+    padding-left: 0;
   }
 }
 
