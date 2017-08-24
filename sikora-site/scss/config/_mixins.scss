@@ -1,0 +1,22 @@
+@mixin title-font{
+  font-family: $brand-font;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin content-font{
+  font-family: $content-font;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@function rem($px) {
+  @return $px / 16px+0rem;
+}
+
+@mixin clearfix{
+  clear: both;
+  &::before, &::after{
+    clear: both;
+  }
+}

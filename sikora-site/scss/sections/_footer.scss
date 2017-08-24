@@ -1,0 +1,59 @@
+.footer{
+  @include clearfix;
+  width: 100%;
+  height: rem($footer-height);
+  padding: 0 rem(20px);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: $bg-content;
+  border-top: 1px solid $separate-color;
+}
+
+.footer__col{
+  float: left;
+  width: 50%;
+  height: 100%;
+  padding: rem(20px) 0;
+}
+
+.copyright p{
+  color: $second-font-color;
+}
+
+.footer__col--right{
+  text-align: right;
+}
+
+.footer__copyright, .footer__socials{
+  display: inline-block;
+}
+
+.socials__item{
+  width: rem(30px);
+  height: rem(30px);
+  border-radius: 50%;
+  margin-left: rem(10px);
+  overflow: hidden;
+}
+
+.socials__link{
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-indent: 100%;
+  position: relative;
+}
+
+.socials__icon{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  fill: $separate-color;
+  transition: fill .5s;
+  &:hover{
+    fill: $accent-color;
+  }
+}
